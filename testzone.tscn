@@ -1,0 +1,150 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4gqka177awmn"]
+
+[ext_resource type="Script" uid="uid://xxj1fijfoxuw" path="res://scripts/Main.gd" id="1_main"]
+[ext_resource type="Script" uid="uid://iv8s6fgcffao" path="res://scripts/core/QuantumConductor.gd" id="2_conductor"]
+[ext_resource type="Script" uid="uid://f1ngbhygcwv3" path="res://scripts/ui/QuantumVisualization.gd" id="3_visualization"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_main")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05, 0.05, 0.1, 1)
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 20.0
+offset_right = 200.0
+offset_bottom = 60.0
+grow_horizontal = 2
+text = "QUANTUM SINGULARITY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="."]
+modulate = Color(0.7, 0.7, 0.7, 1)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_top = 60.0
+offset_right = 150.0
+offset_bottom = 80.0
+grow_horizontal = 2
+text = "Mathematical Foundation"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuantumConductor" type="Node" parent="."]
+script = ExtResource("2_conductor")
+
+[node name="QuantumVisualization" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_visualization")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Controls" type="VBoxContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -200.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 300.0
+grow_horizontal = 0
+
+[node name="TimeLabel" type="Label" parent="UI/Controls"]
+layout_mode = 2
+text = "Time Scale: 1.0"
+
+[node name="TimeSlider" type="HSlider" parent="UI/Controls"]
+layout_mode = 2
+max_value = 3.0
+step = 0.1
+value = 1.0
+
+[node name="PauseButton" type="Button" parent="UI/Controls"]
+layout_mode = 2
+text = "Pause Evolution"
+
+[node name="HSeparator" type="HSeparator" parent="UI/Controls"]
+layout_mode = 2
+
+[node name="InfoLabel" type="Label" parent="UI/Controls"]
+layout_mode = 2
+text = "System: Test System
+Dimensions: 7
+Evolution Rate: 0.02"
+autowrap_mode = 2
+
+[node name="StatusLabel" type="Label" parent="UI/Controls"]
+modulate = Color(0.7, 1, 0.7, 1)
+layout_mode = 2
+text = "Status: Running
+Time: 0.0s"
+autowrap_mode = 2
+
+[node name="DebugPanel" type="Panel" parent="UI"]
+modulate = Color(1, 1, 1, 0.1)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -150.0
+offset_right = 400.0
+grow_vertical = 0
+
+[node name="DebugLabel" type="Label" parent="UI/DebugPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Debug: Mathematical state evolution
+Vector components updating...
+Phase relationships forming..."
+vertical_alignment = 1
+autowrap_mode = 2
+
+[connection signal="value_changed" from="UI/Controls/TimeSlider" to="." method="_on_time_scale_changed"]
+[connection signal="pressed" from="UI/Controls/PauseButton" to="." method="_on_pause_pressed"]
