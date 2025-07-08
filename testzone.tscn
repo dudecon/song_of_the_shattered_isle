@@ -145,6 +145,3 @@ Vector components updating...
 Phase relationships forming..."
 vertical_alignment = 1
 autowrap_mode = 2
-
-[connection signal="value_changed" from="UI/Controls/TimeSlider" to="." method="_on_time_scale_changed"]
-[connection signal="pressed" from="UI/Controls/PauseButton" to="." method="_on_pause_pressed"]

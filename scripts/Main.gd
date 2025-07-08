@@ -4,48 +4,39 @@ extends Control
 
 @onready var conductor: QuantumConductor = $QuantumConductor
 @onready var visualization: QuantumVisualization = $QuantumVisualization
-@onready var controls: VBoxContainer = $UI/Controls
-
-var time_scale_slider: HSlider
-var pause_button: Button
-var info_label: Label
+@onready var time_slider: HSlider = $UI/Controls/TimeSlider
+@onready var pause_button: Button = $UI/Controls/PauseButton
+@onready var status_label: Label = $UI/Controls/StatusLabel
 
 func _ready():
-	_setup_ui()
-	visualization.conductor = conductor
-
-func _setup_ui():
-	# Time scale control
-	var time_label = Label.new()
-	time_label.text = "Time Scale"
-	controls.add_child(time_label)
-	
-	time_scale_slider = HSlider.new()
-	time_scale_slider.min_value = 0.0
-	time_scale_slider.max_value = 3.0
-	time_scale_slider.value = 1.0
-	time_scale_slider.step = 0.1
-	time_scale_slider.value_changed.connect(_on_time_scale_changed)
-	controls.add_child(time_scale_slider)
-	
-	# Pause/Resume button
-	pause_button = Button.new()
-	pause_button.text = "Pause"
-	pause_button.pressed.connect(_on_pause_pressed)
-	controls.add_child(pause_button)
-	
-	# Info display
-	info_label = Label.new()
-	info_label.text = "Quantum Singularity - Mathematical Foundation"
-	controls.add_child(info_label)
+    visualization.conductor = conductor
+    
+    # Connect the working UI elements
+    time_slider.value_changed.connect(_on_time_scale_changed)
+    pause_button.pressed.connect(_on_pause_pressed)
+    
+    # Update status periodically
+    var timer = Timer.new()
+    timer.wait_time = 0.5
+    timer.timeout.connect(_update_status)
+    timer.autostart = true
+    add_child(timer)
 
 func _on_time_scale_changed(value: float):
-	conductor.set_time_scale(value)
+    conductor.set_time_scale(value)
+    $UI/Controls/TimeLabel.text = "Time Scale: %.1f" % value
 
 func _on_pause_pressed():
-	if conductor.auto_evolution:
-		conductor.pause_evolution()
-		pause_button.text = "Resume"
-	else:
-		conductor.resume_evolution()
-		pause_button.text = "Pause"
+    if conductor.auto_evolution:
+        conductor.pause_evolution()
+        pause_button.text = "Resume"
+    else:
+        conductor.resume_evolution()
+        pause_button.text = "Pause Evolution"
+
+func _update_status():
+    var time_text = "Status: %s\nTime: %.1fs" % [
+        "Running" if conductor.auto_evolution else "Paused",
+        Time.get_time_dict_from_system()["second"]
+    ]
+    status_label.text = time_text
