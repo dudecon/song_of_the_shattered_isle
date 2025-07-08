@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dr8ipw16r84lp"]
+[gd_scene load_steps=5 format=3 uid="uid://dr8ipw16r84lp"]
 
 [ext_resource type="PackedScene" uid="uid://q4w88k3sn3g7" path="res://3D Models/stylized_tree_0708021422_texture_fbx/stylized_tree_0708021422_texture.fbx" id="1_jgjqi"]
 [ext_resource type="PackedScene" uid="uid://dn1ueo0hj0fo2" path="res://3D Models/stylized_chest_0708021449__fbx/stylized_chest_0708021449_.fbx" id="2_vrv26"]
 [ext_resource type="PackedScene" uid="uid://dympvg3nopqjc" path="res://3D Models/Hill_Haven_0708021708_stylize_fbx/Hill_Haven_0708021708_stylize.fbx" id="3_ti018"]
+[ext_resource type="PackedScene" uid="uid://cccgymo7ieyuk" path="res://WaterPlane.tscn" id="4_vrv26"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -16,3 +17,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86687, 0.630336, 0.076782)
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.00925004, 2.28373, -0.216077)
 
 [node name="WaterPlane" type="MeshInstance3D" parent="."]
+
+[node name="Node3D" parent="." instance=ExtResource("4_vrv26")]
+transform = Transform3D(5, 0, 0, 0, 0.5, 0, 0, 0, 5, 0, -0.937204, 0)

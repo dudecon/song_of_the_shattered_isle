@@ -1,0 +1,9 @@
+[gd_resource type="NoiseTexture2D" load_steps=2 format=3 uid="uid://c5vp7fer21rmf"]
+
+[ext_resource type="FastNoiseLite" uid="uid://cclnh1odjfhfj" path="res://Shaders/new_fast_noise_lite.tres" id="1_ibvby"]
+
+[resource]
+seamless = true
+as_normal_map = true
+bump_strength = 1.5
+noise = ExtResource("1_ibvby")

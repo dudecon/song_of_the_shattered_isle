@@ -37,7 +37,6 @@ uniform sampler2D DEPTH_TEXTURE : hint_depth_texture, filter_linear_mipmap;
 uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
 
 
-
 float fresnel(float amount, vec3 normal, vec3 view)
 {
 return pow((1.0 - clamp(dot(normalize(normal), normalize(view)), 0.0, 1.0 )), amount);
@@ -69,9 +68,12 @@ vec3 depth_color = mix(color_shallow.rgb, color_deep.rgb, depth_blend_power);
 vec3 color = mix(screen_color * depth_color, depth_color * 0.25, depth_blend_power * 0.5);
 
 // Getting edge depth calc
-float z_depth = edge(texture(DEPTH_TEXTURE, SCREEN_UV).x);
+float z_depth = edge(texture(DEPTH_TEXTURE, SCREEN_UV).r);
 float z_pos = edge(FRAGCOORD.z);
-float z_dif = z_depth - z_pos;
+// float z_dif = z_depth - z_pos;
+
+float z_dif = abs(z_depth - z_pos); // Use absolute difference
+vec3 depth_color_adj = mix(color, edge_color, step(edge_scale, z_dif));
 
 // Time calculations for wave (normal map) movement
 vec2 time = (TIME * wave_direction) * time_scale; // Movement rate of first wave
@@ -85,9 +87,14 @@ float fresnel = fresnel(5.0, NORMAL, VIEW);
 vec3 surface_color = mix(albedo, albedo2, fresnel); // Interpolate albedo values by frensel
 
 // Add Edge Color to Surface Color Albedo
-vec3 depth_color_adj = mix(edge_color, color, step(edge_scale, z_dif));
+// vec3 depth_color_adj = mix(edge_color, color, step(edge_scale, z_dif));
 
 ALBEDO = clamp(surface_color + depth_color_adj,vec3(0.0),vec3(1.0));
+// Debug: Visualize z_dif
+// ALBEDO = vec3(clamp(z_dif * 0.1, 0.0, 1.0)); // Scale to make it visible
+// ALBEDO = vec3(clamp(z_depth * 0.01, 0.0, 1.0)); // Check z_depth
+// ALBEDO = vec3(clamp(z_pos * 0.1, 0.0, 1.0)); // Check z_pos
+
 METALLIC = metallic;
 ROUGHNESS = roughness;
 NORMAL_MAP = normal_blend;
