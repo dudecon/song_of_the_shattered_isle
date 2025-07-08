@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dehs4jrki0f1c"
+path.s3tc="res://.godot/imported/stylized_chest_0708021449__0.png-b86c1fb2e8fd8ca3a90c0b524b734924.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "e95e4d0eba6264b20c871a13f0f08d64"
+}
+
+[deps]
+
+source_file="res://3D Models/stylized_chest_0708021449__fbx/stylized_chest_0708021449__0.png"
+dest_files=["res://.godot/imported/stylized_chest_0708021449__0.png-b86c1fb2e8fd8ca3a90c0b524b734924.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0
