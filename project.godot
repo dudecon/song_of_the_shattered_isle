@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Song of the Shattered Isle"
-run/main_scene="uid://cccgymo7ieyuk"
+run/main_scene="uid://b5elvselo0nk1"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
