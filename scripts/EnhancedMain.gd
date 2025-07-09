@@ -21,11 +21,16 @@ var game_session: GameSession
 var performance_monitor: PerformanceMonitor
 
 func _ready():
+	ResponsiveUI.setup_responsive_ui(self)
 	_initialize_game_session()
 	_setup_connections()
 	_setup_ui()
 	_start_monitoring()
 	_setup_debug_panel()
+
+func _notification(what):
+	if what == NOTIFICATION_RESIZED:
+		ResponsiveUI.setup_responsive_ui(self)
 
 func _initialize_game_session():
 	game_session = GameSession.new()

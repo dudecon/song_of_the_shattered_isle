@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://cajbnu500shqu"]
+[gd_scene load_steps=6 format=3 uid="uid://bwfgb705bolse"]
 
-[ext_resource type="Script" uid="uid://rl5n8plgyecv" path="res://scripts/ui/RTSInterface.gd" id="1"]
+[ext_resource type="Script" uid="uid://cju58a7jgv13t" path="res://scripts/EnhancedMain.gd" id="1"]
 [ext_resource type="Script" uid="uid://iv8s6fgcffao" path="res://scripts/core/QuantumConductor.gd" id="2"]
 [ext_resource type="Script" uid="uid://f1ngbhygcwv3" path="res://scripts/ui/QuantumVisualization.gd" id="3"]
+[ext_resource type="Script" uid="uid://rl5n8plgyecv" path="res://scripts/ui/RTSInterface.gd" id="4"]
+[ext_resource type="Script" uid="uid://diyvwm4t7jja1" path="res://scripts/ui/IconSwitcher.gd" id="4_4bjjn"]
 
-[node name="RTSMain" type="Control"]
+[node name="EnhancedMain" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,82 +22,41 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.05, 0.05, 0.15, 1)
+color = Color(0.02, 0.02, 0.08, 1)
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 10.0
+offset_right = 250.0
+offset_bottom = 60.0
+grow_horizontal = 2
+text = "🌌 QUANTUM SINGULARITY RTS 🌌"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 60.0
+offset_right = 200.0
+offset_bottom = 90.0
+grow_horizontal = 2
+text = "Mathematical Reality Command Interface"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="QuantumConductor" type="Node" parent="."]
 script = ExtResource("2")
+debug_mode = true
 
-[node name="ResourceCrown" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 60.0
-grow_horizontal = 2
-
-[node name="CrownBackground" type="ColorRect" parent="ResourceCrown"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.1, 0.1, 0.2, 0.9)
-
-[node name="QuantumEnergy" type="Label" parent="ResourceCrown"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 20.0
-offset_top = -12.0
-offset_right = 200.0
-offset_bottom = 12.0
-grow_vertical = 2
-text = "Energy: 0.00"
-vertical_alignment = 1
-
-[node name="MathStability" type="Label" parent="ResourceCrown"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 220.0
-offset_top = -12.0
-offset_right = 400.0
-offset_bottom = 12.0
-grow_vertical = 2
-text = "Stability: 0.00"
-vertical_alignment = 1
-
-[node name="CurrentIcon" type="Label" parent="ResourceCrown"]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -200.0
-offset_top = -12.0
-offset_right = -20.0
-offset_bottom = 12.0
-grow_horizontal = 0
-grow_vertical = 2
-text = "🔹 Loading..."
-horizontal_alignment = 2
-vertical_alignment = 1
-
-[node name="CanvasArea" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 60.0
-offset_right = -300.0
-offset_bottom = -100.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MathVisualization" type="Control" parent="CanvasArea"]
+[node name="QuantumVisualization" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -110,135 +71,40 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3")
 
-[node name="DetailPanel" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -300.0
-offset_top = -200.0
-offset_bottom = 200.0
-grow_horizontal = 0
-grow_vertical = 2
-
-[node name="PanelBackground" type="ColorRect" parent="DetailPanel"]
+[node name="IconSwitcher" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.1, 0.1, 0.2, 0.9)
+script = ExtResource("4_4bjjn")
 
-[node name="DetailTitle" type="Label" parent="DetailPanel"]
+[node name="CurrentIconDisplay" type="VBoxContainer" parent="IconSwitcher"]
 layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 10.0
-offset_top = 10.0
-offset_right = -10.0
-offset_bottom = 30.0
-grow_horizontal = 2
-text = "DETAIL VIEW"
-horizontal_alignment = 1
-
-[node name="DetailContent" type="Label" parent="DetailPanel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 10.0
-offset_top = 40.0
-offset_right = -10.0
-offset_bottom = -10.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Select a component to view details..."
-vertical_alignment = 1
-autowrap_mode = 3
-
-[node name="VerbPalette" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 12
+anchors_preset = 2
 anchor_top = 1.0
-anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -100.0
-grow_horizontal = 2
+offset_left = 20.0
+offset_top = -120.0
+offset_right = 400.0
+offset_bottom = -20.0
 grow_vertical = 0
 
-[node name="PaletteBackground" type="ColorRect" parent="VerbPalette"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.1, 0.1, 0.2, 0.9)
+[node name="IconName" type="Label" parent="IconSwitcher/CurrentIconDisplay"]
+layout_mode = 2
+text = "🔹 Loading Icon..."
 
-[node name="QButton" type="Button" parent="VerbPalette"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 50.0
-offset_top = -20.0
-offset_right = 150.0
-offset_bottom = 20.0
-grow_vertical = 2
-text = "Q - Deploy"
+[node name="IconDescription" type="Label" parent="IconSwitcher/CurrentIconDisplay"]
+layout_mode = 2
+text = "Initializing mathematical system..."
+autowrap_mode = 3
 
-[node name="EButton" type="Button" parent="VerbPalette"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 170.0
-offset_top = -20.0
-offset_right = 270.0
-offset_bottom = 20.0
-grow_vertical = 2
-text = "E - Modulate"
+[node name="DimensionLabel" type="Label" parent="IconSwitcher/CurrentIconDisplay"]
+layout_mode = 2
+text = "Dimensions: 0"
 
-[node name="RButton" type="Button" parent="VerbPalette"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 290.0
-offset_top = -20.0
-offset_right = 390.0
-offset_bottom = 20.0
-grow_vertical = 2
-text = "R - Transform"
-
-[node name="FButton" type="Button" parent="VerbPalette"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 410.0
-offset_top = -20.0
-offset_right = 510.0
-offset_bottom = 20.0
-grow_vertical = 2
-text = "F - Observe"
-
-[node name="CButton" type="Button" parent="VerbPalette"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 530.0
-offset_top = -20.0
-offset_right = 630.0
-offset_bottom = 20.0
-grow_vertical = 2
-text = "C - Couple"
-
-[node name="ContextPopup" type="Control" parent="."]
+[node name="IconPanel" type="Panel" parent="IconSwitcher"]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -246,14 +112,38 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -150.0
-offset_top = -100.0
-offset_right = 150.0
-offset_bottom = 100.0
+offset_left = -250.0
+offset_top = -200.0
+offset_right = 250.0
+offset_bottom = 200.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="ContextPopup"]
+[node name="ScrollContainer" type="ScrollContainer" parent="IconSwitcher/IconPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 50.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="IconList" type="VBoxContainer" parent="IconSwitcher/IconPanel/ScrollContainer"]
+layout_mode = 2
+
+[node name="RTSInterface" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4")
+
+[node name="UI" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -261,7 +151,62 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBox" type="VBoxContainer" parent="ContextPopup/Panel"]
+[node name="Controls" type="VBoxContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -240.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 200.0
+grow_horizontal = 0
+
+[node name="TimeLabel" type="Label" parent="UI/Controls"]
+layout_mode = 2
+text = "Time Scale: 1.0"
+horizontal_alignment = 1
+
+[node name="TimeSlider" type="HSlider" parent="UI/Controls"]
+layout_mode = 2
+max_value = 3.0
+step = 0.1
+value = 1.0
+
+[node name="PauseButton" type="Button" parent="UI/Controls"]
+layout_mode = 2
+text = "Pause Evolution"
+
+[node name="ResetButton" type="Button" parent="UI/Controls"]
+layout_mode = 2
+text = "Reset System"
+
+[node name="StatusLabel" type="Label" parent="UI/Controls"]
+layout_mode = 2
+text = "Status: Initializing..."
+autowrap_mode = 3
+
+[node name="MathematicalInfo" type="Label" parent="UI/Controls"]
+layout_mode = 2
+text = "Mathematical info loading..."
+autowrap_mode = 3
+
+[node name="DebugPanel" type="Panel" parent="UI"]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -350.0
+offset_top = -250.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="DebugLabel" type="Label" parent="UI/DebugPanel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -272,18 +217,19 @@ offset_right = -10.0
 offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Title" type="Label" parent="ContextPopup/Panel/VBox"]
-layout_mode = 2
-text = "Action Title"
-horizontal_alignment = 1
-
-[node name="Description" type="Label" parent="ContextPopup/Panel/VBox"]
-layout_mode = 2
-text = "Action description goes here..."
-horizontal_alignment = 1
+text = "Debug Info Loading..."
 autowrap_mode = 3
 
-[node name="ConfirmButton" type="Button" parent="ContextPopup/Panel/VBox"]
-layout_mode = 2
-text = "Click number again to confirm"
+[node name="InstructionPanel" type="Panel" parent="UI"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -240.0
+offset_top = 200.0
+offset_right = -20.0
+offset_bottom = 400.0
+grow_horizontal = 0
+grow_vertical = 2
