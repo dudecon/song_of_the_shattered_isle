@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c4gqka177awmn"]
 
 [ext_resource type="Script" uid="uid://xxj1fijfoxuw" path="res://scripts/Main.gd" id="1_main"]
-[ext_resource type="Script" uid="uid://iv8s6fgcffao" path="res://scripts/core/QuantumConductor.gd" id="2_conductor"]
+[ext_resource type="Script" uid="uid://iv8s6fgcffao" path="res://scripts/math/core/QuantumConductor.gd" id="2_conductor"]
 [ext_resource type="Script" uid="uid://f1ngbhygcwv3" path="res://scripts/ui/QuantumVisualization.gd" id="3_visualization"]
 
 [node name="Main" type="Control"]

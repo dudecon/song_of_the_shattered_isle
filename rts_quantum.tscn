@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bwfgb705bolse"]
 
 [ext_resource type="Script" uid="uid://cju58a7jgv13t" path="res://scripts/EnhancedMain.gd" id="1"]
-[ext_resource type="Script" uid="uid://iv8s6fgcffao" path="res://scripts/core/QuantumConductor.gd" id="2"]
+[ext_resource type="Script" uid="uid://iv8s6fgcffao" path="res://scripts/math/core/QuantumConductor.gd" id="2"]
 [ext_resource type="Script" uid="uid://f1ngbhygcwv3" path="res://scripts/ui/QuantumVisualization.gd" id="3"]
 [ext_resource type="Script" uid="uid://rl5n8plgyecv" path="res://scripts/ui/RTSInterface.gd" id="4"]
 [ext_resource type="Script" uid="uid://diyvwm4t7jja1" path="res://scripts/ui/IconSwitcher.gd" id="4_4bjjn"]

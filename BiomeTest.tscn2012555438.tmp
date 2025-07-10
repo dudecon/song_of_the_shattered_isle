@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://ygertw8lyx66"]
+
+[ext_resource type="Script" uid="uid://d8j51vurtjji" path="res://scripts/tests/BiomeTestMain.gd" id="1"]
+
+[node name="BiomeTest" type="Node"]
+script = ExtResource("1")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TestOutput" type="TextEdit" parent="UI"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -300.0
+offset_right = 500.0
+offset_bottom = -20.0
+grow_vertical = 0
+text = "BiomeMathCore Architecture Test
+Starting tests...
+"
+editable = false
+
+[node name="BiomeDisplay" type="Control" parent="UI"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -820.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 620.0
+grow_horizontal = 0
+
+[node name="TestControls" type="VBoxContainer" parent="UI"]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 200.0
+offset_bottom = 400.0
+
+[node name="PerformanceLabel" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 520.0
+offset_top = -40.0
+offset_right = 800.0
+offset_bottom = -20.0
+grow_vertical = 0
+text = "Performance: Starting..."
+horizontal_alignment = 1
+
+[node name="Instructions" type="Label" parent="UI"]
+layout_mode = 1
+offset_left = 20.0
+offset_top = 420.0
+offset_right = 500.0
+offset_bottom = 500.0
+text = "Keyboard Controls:
+1 - Deploy Random Tool
+2 - Paint Random Influence  
+3 - Compress Random Node
+R - Reset System
+P - Performance Test
+T - Run All Tests"
+autowrap_mode = 2
