@@ -52,7 +52,8 @@ func _physics_process(delta):
 			_debug_output()
 
 func _initialize_quantum_core():
-	quantum_core = DynamicalSystem.new(7)
+	# FIXED: DynamicalSystem constructor takes no arguments
+	quantum_core = DynamicalSystem.new()
 	quantum_core.state_evolved.connect(_on_state_evolved)
 	
 	if debug_mode:
@@ -207,65 +208,68 @@ func get_system_diagnostics() -> Dictionary:
 		"evolution_history_size": evolution_history.size(),
 		"system_energy": get_system_energy(),
 		"phase_coherence": get_phase_coherence(),
-		"dominant_component": get_dominant_component(),
-		"performance": {
-			"avg_evolution_time": total_evolution_time / max(frame_count, 1),
-			"fps": Engine.get_frames_per_second()
-		}
+		"dominant_component": get_dominant_component()
 	}
-	
-	if current_icon:
-		diagnostics["icon_info"] = {
-			"dimension": current_icon.dimension,
-			"evolution_rate": current_icon.evolution_rate,
-			"oscillating_components": current_icon.get_oscillating_components().size(),
-			"stable_components": current_icon.get_stable_components().size(),
-			"coupling_strength": current_icon.get_matrix_coupling_strength()
-		}
-	
 	return diagnostics
 
 func _record_evolution_step():
-	evolution_history.append(quantum_core.get_state_snapshot())
-	
-	# Limit history size for memory management
-	while evolution_history.size() > max_history_size:
-		evolution_history.pop_front()
+	"""Record current state in evolution history"""
+	if quantum_core:
+		evolution_history.append(quantum_core.get_state_snapshot())
+		
+		# Keep history size manageable
+		while evolution_history.size() > max_history_size:
+			evolution_history.pop_front()
 
 func _check_critical_transitions():
-	if evolution_history.size() < 10:  # Need more history
+	"""Check for critical mathematical transitions"""
+	if not quantum_core:
 		return
 	
-	var current_energy = get_system_energy()
+	var energy = get_system_energy()
 	var coherence = get_phase_coherence()
 	
-	# Only check every 60 frames to avoid spam
-	if frame_count % 60 != 0:
-		return
+	# Energy-based transitions
+	if energy > 10.0:
+		critical_transition_detected.emit("energy_explosion")
+	elif energy < 0.1:
+		critical_transition_detected.emit("energy_collapse")
 	
-	# More restrictive thresholds
-	if coherence > 0.95:  # Very high coherence only
-		critical_transition_detected.emit("phase_lock")
+	# Coherence-based transitions
+	if coherence > 0.95:
+		critical_transition_detected.emit("high_coherence")
+	elif coherence < 0.05:
+		critical_transition_detected.emit("decoherence")
 
 func _update_performance_tracking(delta: float):
+	"""Update performance tracking metrics"""
 	frame_count += 1
 	total_evolution_time += delta
+	
+	# Update FPS display periodically
+	if Time.get_time_dict_from_system()["second"] != last_fps_update:
+		last_fps_update = Time.get_time_dict_from_system()["second"]
+		if debug_mode:
+			print("FPS: ", Engine.get_frames_per_second())
 
 func _emit_performance_signals():
 	"""Emit performance-related signals"""
-	system_energy_changed.emit(get_system_energy())
-	phase_coherence_changed.emit(get_phase_coherence())
+	var energy = get_system_energy()
+	var coherence = get_phase_coherence()
+	
+	system_energy_changed.emit(energy)
+	phase_coherence_changed.emit(coherence)
 
 func _debug_output():
-	"""Debug output for system state"""
-	var diagnostics = get_system_diagnostics()
-	print("=== QUANTUM CONDUCTOR DEBUG ===")
-	print("Icon: ", diagnostics.current_icon)
-	print("Energy: ", "%.3f" % diagnostics.system_energy)
-	print("Coherence: ", "%.3f" % diagnostics.phase_coherence)
-	print("Dominant: ", diagnostics.dominant_component.emoji, " ", diagnostics.dominant_component.label)
-	print("FPS: ", diagnostics.performance.fps)
-	print("===============================")
+	"""Debug output for development"""
+	if debug_mode:
+		var diagnostics = get_system_diagnostics()
+		print("=== Quantum System Debug ===")
+		print("Frame: ", frame_count)
+		print("Energy: ", diagnostics.system_energy)
+		print("Coherence: ", diagnostics.phase_coherence)
+		print("Dominant: ", diagnostics.dominant_component)
+		print("=============================")
 
 func _on_state_evolved(new_state: PackedVector2Array):
 	# Handle state evolution events
@@ -313,7 +317,8 @@ func simulate_future_states(steps: int = 10) -> Array[PackedVector2Array]:
 		return future_states
 	
 	# Create a temporary copy of the quantum core
-	var temp_core = DynamicalSystem.new(quantum_core.dimension)
+	# FIXED: DynamicalSystem constructor takes no arguments
+	var temp_core = DynamicalSystem.new()
 	temp_core.load_icon_configuration(current_icon)
 	
 	# Set the current state

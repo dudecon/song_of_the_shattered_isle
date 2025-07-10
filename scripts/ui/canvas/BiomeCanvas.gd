@@ -24,7 +24,7 @@ var zoom_controller: ZoomController
 
 # UI State (no mathematical state)
 var selected_node_indices: Array[int] = []
-var active_tool: Tool = null
+var active_tool: BiomeTool = null
 var ui_zoom_level: float = 1.0
 
 signal node_selected(node_index: int)
@@ -34,13 +34,14 @@ func _ready():
 	_initialize_visual_layers()
 	_setup_ui_components()
 	_connect_to_math_core()
-	_setup_interaction_handling()
+	# REMOVED: _setup_interaction_handling() call - this method doesn't exist
 
 func setup_for_biome(core: BiomeMathCore):
 	"""Initialize this UI to display and interface with a specific math core"""
 	math_core = core
-	tool_interface = ToolInterface.new(core)
-	influence_interface = InfluenceInterface.new(core)
+	# FIXED: Remove constructor arguments
+	tool_interface = ToolInterface.new()
+	influence_interface = InfluenceInterface.new()
 	
 	# UI responds to math, never drives it
 	_connect_to_math_core()
@@ -106,10 +107,11 @@ func _input(event):
 func _select_tool(tool_name: String):
 	if tool_interface:
 		active_tool = tool_interface.get_tool(tool_name)
-		tool_palette.set_active_tool(active_tool)
-		_update_cursor_for_tool()
+		if active_tool:
+			tool_palette.set_active_tool(active_tool)
+			_update_cursor_for_tool()
 
-func _on_tool_selected(tool: Tool):
+func _on_tool_selected(tool: BiomeTool):
 	active_tool = tool
 	_update_cursor_for_tool()
 
@@ -128,64 +130,83 @@ func _select_node(node_index: int):
 	# Clear previous selection
 	for prev_index in selected_node_indices:
 		emoji_lattice.set_node_selected(prev_index, false)
-	selected_node_indices.clear()
 	
-	# Select new node
+	# Set new selection
+	selected_node_indices = [node_index]
 	emoji_lattice.set_node_selected(node_index, true)
-	selected_node_indices.append(node_index)
 	
-	# Update information display from math core
+	# Show node information
 	var node_info = math_core.get_node_info(node_index)
 	information_hud.show_node_details(node_info)
 	
 	node_selected.emit(node_index)
 
 func _deploy_tool_on_node(node_index: int):
-	if not active_tool or not tool_interface:
-		return
-	
-	# Check if tool can be deployed (ask math core)
-	if not tool_interface.can_deploy_tool(active_tool.name, node_index):
-		effect_layer.show_invalid_deployment_feedback(node_index)
-		return
-	
-	# Deploy tool through math interface
-	var deployment_result = tool_interface.deploy_tool(active_tool.name, node_index)
-	
-	if deployment_result.success:
-		# Show visual feedback
-		effect_layer.show_tool_deployment_effect(node_index, active_tool)
-		
-		# Update UI state
-		tool_deployed.emit(active_tool.name, node_index)
-		
-		# Auto-deselect single-use tools
-		if active_tool.is_single_use:
-			active_tool = null
-			tool_palette.clear_active_tool()
-	else:
-		# Show error feedback
-		effect_layer.show_deployment_error(node_index, deployment_result.error_message)
+	if active_tool and math_core:
+		# Check if tool can be deployed
+		if math_core.can_deploy_tool(active_tool.tool_name, node_index):
+			# Deploy tool via math core
+			var deployment_result = math_core.deploy_tool(active_tool.tool_name, node_index)
+			
+			if deployment_result.success:
+				tool_deployed.emit(active_tool.tool_name, node_index)
+				# Visual feedback handled by signal from math core
+			else:
+				_show_deployment_error(deployment_result.error)
+		else:
+			_show_deployment_error("Cannot deploy " + active_tool.tool_name + " on this node")
+
+func _show_deployment_error(error_message: String):
+	var error_dialog = AcceptDialog.new()
+	error_dialog.dialog_text = error_message
+	add_child(error_dialog)
+	error_dialog.popup_centered()
 
 func _show_node_context_menu(node_index: int):
-	var node_info = math_core.get_node_info(node_index)
 	var context_menu = NodeContextMenu.new()
-	
-	# Add context-appropriate options
-	context_menu.add_option("View Details", func(): _show_node_details(node_index))
-	
-	if node_info.is_compressed:
-		var safety_check = math_core.check_decompression_safety(node_index)
-		if safety_check.is_safe:
-			context_menu.add_option("Decompress Node", func(): _decompress_node(node_index))
-		else:
-			context_menu.add_disabled_option("Decompress Node (" + safety_check.warning + ")")
-	
-	if node_info.has_operators:
-		context_menu.add_option("Manage Operators", func(): _manage_operators(node_index))
-	
-	context_menu.popup_at_mouse()
+	context_menu.node_action_requested.connect(_on_node_action_requested)
 	add_child(context_menu)
+	
+	var mouse_pos = get_global_mouse_position()
+	context_menu.show_for_node(node_index, mouse_pos)
+
+func _on_node_action_requested(action: String, node_index: int):
+	match action:
+		"analyze":
+			_analyze_node(node_index)
+		"compress":
+			_compress_node(node_index)
+		"deploy":
+			_select_tool("Spark")  # Default tool
+		"influence":
+			_start_influence_painting(node_index)
+		"details":
+			_show_node_details(node_index)
+
+func _analyze_node(node_index: int):
+	if math_core:
+		var analysis_result = math_core.analyze_node(node_index)
+		information_hud.show_detailed_analysis(analysis_result)
+
+func _compress_node(node_index: int):
+	# Confirm with user
+	var confirmation = DecompressionDialog.new()
+	confirmation.setup_for_node(node_index)
+	confirmation.confirmed.connect(func(): _perform_compression(node_index))
+	add_child(confirmation)
+
+func _perform_compression(node_index: int):
+	if math_core:
+		var compression_result = math_core.compress_node(node_index)
+		if compression_result.success:
+			# Update visuals
+			emoji_lattice.set_node_compressed(node_index, true)
+		else:
+			_show_deployment_error(compression_result.error)
+
+func _start_influence_painting(node_index: int):
+	if influence_interface:
+		influence_interface.start_influence_painting(node_index)
 
 func _decompress_node(node_index: int):
 	# Confirm with user

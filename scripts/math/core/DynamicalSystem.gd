@@ -76,6 +76,32 @@ func load_from_biome_composition(biome_composition: BiomeComposition):
 		print("Warning: No blended matrix found, using default matrix")
 		_create_default_matrix()
 
+func load_icon_configuration(icon: IconDefinition):
+	"""Load configuration from an icon definition"""
+	if not icon:
+		print("Warning: Icon is null, using default configuration")
+		_initialize_default_system()
+		return
+	
+	# Set dimension from icon
+	dimension = icon.dimension
+	
+	# Load transformation matrix from icon
+	if icon.transformation_matrix and icon.transformation_matrix.size() > 0:
+		transformation_matrix = icon.transformation_matrix.duplicate()
+	else:
+		_create_default_matrix()
+	
+	# Initialize state vector
+	state_vector.clear()
+	for i in range(dimension):
+		var initial_magnitude = icon.get_parameter_value(i)
+		var initial_phase = icon.get_parameter_phase(i)
+		state_vector.append(Vector2(
+			initial_magnitude * cos(initial_phase),
+			initial_magnitude * sin(initial_phase)
+		))
+
 func _setup_from_icon_composition(icon_composition: Dictionary, dominant_icons: Array):
 	"""Setup state vector from icon composition"""
 	state_vector.clear()
@@ -160,15 +186,53 @@ func evolve(delta_time: float):
 	# Emit evolution signal
 	state_evolved.emit(state_vector.duplicate())
 
-func get_state_snapshot() -> Array:
-	"""Get current state snapshot"""
-	return state_vector.duplicate()
+func get_state_snapshot() -> PackedVector2Array:
+	"""Get current state snapshot as PackedVector2Array"""
+	var packed_state = PackedVector2Array()
+	for component in state_vector:
+		packed_state.append(component)
+	return packed_state
 
 func get_component_state(component_index: int) -> Vector2:
 	"""Get state of specific component"""
 	if component_index >= 0 and component_index < state_vector.size():
 		return state_vector[component_index]
 	return Vector2.ZERO
+
+# ADDED: Missing methods that QuantumConductor expects
+func get_magnitude(index: int) -> float:
+	"""Get magnitude of component at index"""
+	if index >= 0 and index < state_vector.size():
+		return state_vector[index].length()
+	return 0.0
+
+func get_phase(index: int) -> float:
+	"""Get phase of component at index"""
+	if index >= 0 and index < state_vector.size():
+		return state_vector[index].angle()
+	return 0.0
+
+func get_real(index: int) -> float:
+	"""Get real part of component at index"""
+	if index >= 0 and index < state_vector.size():
+		return state_vector[index].x
+	return 0.0
+
+func get_imaginary(index: int) -> float:
+	"""Get imaginary part of component at index"""
+	if index >= 0 and index < state_vector.size():
+		return state_vector[index].y
+	return 0.0
+
+func add_perturbation(component: int, perturbation: Vector2):
+	"""Add perturbation to specific component"""
+	if component >= 0 and component < state_vector.size():
+		state_vector[component] += perturbation
+
+func modify_matrix_element(row: int, col: int, delta: float):
+	"""Modify a specific matrix element"""
+	if row >= 0 and row < transformation_matrix.size() and col >= 0 and col < transformation_matrix[row].size():
+		transformation_matrix[row][col] += delta
 
 func inject_energy(component_index: int, energy_delta: Vector2):
 	"""Inject energy into specific component"""

@@ -23,6 +23,7 @@ var status_crown: StatusCrown
 signal mathematical_operation_executed(verb: String, target: int, result: Dictionary)
 signal target_selected(target_index: int)
 signal system_analysis_requested(component_index: int)
+signal verb_executed(verb: String, target: int)
 
 func _ready():
 	_setup_responsive_ui()
@@ -86,9 +87,9 @@ func _find_quantum_systems():
 	if conductor:
 		_connect_conductor_signals()
 		_setup_mathematical_targets()
-		print("EnhancedRTS: Connected to quantum systems")
+		print("RTSInterface: Connected to quantum systems")
 	else:
-		push_error("EnhancedRTS: Could not find QuantumConductor!")
+		push_error("RTSInterface: Could not find QuantumConductor!")
 
 func _connect_conductor_signals():
 	conductor.icon_loaded.connect(_on_icon_loaded)
@@ -155,7 +156,7 @@ func _on_verb_selected(verb: String):
 	target_overlay.highlight_available_targets(available_targets)
 	analysis_panel.show_verb_description(verb)
 	
-	print("EnhancedRTS: Selected verb ", verb, " - Available targets: ", available_targets)
+	print("RTSInterface: Selected verb ", verb, " - Available targets: ", available_targets)
 
 func _get_available_targets_for_verb(verb: String) -> Array[int]:
 	if not conductor or not conductor.current_icon:
@@ -229,8 +230,9 @@ func _execute_mathematical_operation():
 		"COUPLE":
 			result = _execute_couple(selected_target)
 	
-	# Emit signal and update UI
+	# Emit signals
 	mathematical_operation_executed.emit(current_verb, selected_target, result)
+	verb_executed.emit(current_verb, selected_target)
 	analysis_panel.show_operation_result(result)
 	
 	# Clear selection
@@ -239,7 +241,7 @@ func _execute_mathematical_operation():
 func _execute_deploy(target: int) -> Dictionary:
 	if conductor and conductor.quantum_core:
 		var perturbation = Vector2(0.15, 0.05 * randf_range(-1, 1))
-3		conductor.add_perturbation(target, perturbation)
+		conductor.add_perturbation(target, perturbation.length())
 		return {
 			"success": true,
 			"operation": "Quantum nexus deployed",
@@ -251,7 +253,7 @@ func _execute_deploy(target: int) -> Dictionary:
 func _execute_modulate(target: int) -> Dictionary:
 	if conductor and conductor.quantum_core:
 		var delta = 0.02 * randf_range(0.5, 1.5)
-		conductor.modify_matrix_element(target, target, delta)
+		conductor.modify_coupling(target, target, delta)
 		return {
 			"success": true,
 			"operation": "Matrix element modulated",
@@ -307,8 +309,8 @@ func _execute_couple(target: int) -> Dictionary:
 		if target < matrix.size():
 			var next_target = (target + 1) % matrix.size()
 			var coupling_strength = 0.03 * randf_range(0.8, 1.2)
-			conductor.modify_matrix_element(target, next_target, coupling_strength)
-			conductor.modify_matrix_element(next_target, target, coupling_strength)
+			conductor.modify_coupling(target, next_target, coupling_strength)
+			conductor.modify_coupling(next_target, target, coupling_strength)
 			return {
 				"success": true,
 				"operation": "Bidirectional coupling created",
@@ -477,70 +479,61 @@ class AnalysisPanel extends Control:
 		preview_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		add_child(preview_label)
 	
-	func show_component_analysis(component_index: int):
-		content_label.text = "Component %d selected for analysis..." % component_index
-	
-	func show_operation_preview(preview: Dictionary):
-		preview_label.text = "PREVIEW: " + preview.get("description", "")
-	
-	func show_operation_result(result: Dictionary):
-		if result.get("success", false):
-			content_label.text = "✓ " + result.get("operation", "Operation completed")
-		else:
-			content_label.text = "✗ " + result.get("error", "Operation failed")
-	
 	func show_verb_description(verb: String):
 		var descriptions = {
-			"DEPLOY": "Deploy quantum nexus to inject energy",
-			"MODULATE": "Modify transformation matrix elements",
-			"TRANSFORM": "Apply phase transformations",
+			"DEPLOY": "Deploy quantum energy nexus to selected component",
+			"MODULATE": "Modify transformation matrix coefficients",
+			"TRANSFORM": "Apply phase transformation to component",
 			"ANALYZE": "Perform deep mathematical analysis",
-			"COUPLE": "Create bidirectional coupling"
+			"COUPLE": "Create bidirectional coupling between components"
 		}
 		content_label.text = descriptions.get(verb, "Unknown operation")
 	
+	func show_component_analysis(target_index: int):
+		# This would show detailed component analysis
+		content_label.text = "Component " + str(target_index) + " analysis"
+	
+	func show_operation_preview(preview: Dictionary):
+		preview_label.text = preview.get("description", "No preview available")
+	
+	func show_operation_result(result: Dictionary):
+		if result.get("success", false):
+			content_label.text = "SUCCESS: " + result.get("operation", "Unknown operation")
+		else:
+			content_label.text = "FAILED: " + result.get("error", "Unknown error")
+	
 	func show_icon_info(icon_name: String):
-		title_label.text = "ANALYZING: " + icon_name
+		content_label.text = "Icon loaded: " + icon_name
 	
 	func clear_displays():
-		content_label.text = "Select a component to analyze..."
+		content_label.text = ""
 		preview_label.text = ""
 
 class StatusCrown extends Control:
 	var energy_label: Label
 	var coherence_label: Label
-	var icon_label: Label
 	
 	func _ready():
-		_create_status_elements()
+		_create_ui_elements()
 	
-	func _create_status_elements():
+	func _create_ui_elements():
 		var background = ColorRect.new()
-		background.color = Color(0.1, 0.1, 0.1, 0.9)
+		background.color = Color(0.05, 0.05, 0.15, 0.8)
 		background.size = size
 		add_child(background)
 		
 		energy_label = Label.new()
-		energy_label.text = "Energy: 0.00"
-		energy_label.position = Vector2(20, 15)
-		energy_label.size = Vector2(200, 30)
-		energy_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		energy_label.text = "Energy: 0.0"
+		energy_label.position = Vector2(10, 10)
+		energy_label.size = Vector2(200, 40)
 		add_child(energy_label)
 		
 		coherence_label = Label.new()
-		coherence_label.text = "Coherence: 0.00"
-		coherence_label.position = Vector2(240, 15)
-		coherence_label.size = Vector2(200, 30)
-		coherence_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		coherence_label.text = "Coherence: 0.0"
+		coherence_label.position = Vector2(size.x - 210, 10)
+		coherence_label.size = Vector2(200, 40)
+		coherence_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 		add_child(coherence_label)
-		
-		icon_label = Label.new()
-		icon_label.text = "🔹 Loading..."
-		icon_label.position = Vector2(size.x - 300, 15)
-		icon_label.size = Vector2(280, 30)
-		icon_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-		icon_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-		add_child(icon_label)
 	
 	func update_energy_display(energy: float):
 		energy_label.text = "Energy: %.3f" % energy
@@ -551,75 +544,43 @@ class StatusCrown extends Control:
 class MathematicalTarget extends Control:
 	var component_index: int
 	var component_info: Dictionary
-	var background: ColorRect
-	var emoji_label: Label
-	var magnitude_indicator: ProgressBar
 	var is_available: bool = false
 	var is_selected: bool = false
 	
-	signal target_activated(index: int)
+	signal target_activated(target_index: int)
 	
 	func setup(index: int, info: Dictionary):
 		component_index = index
 		component_info = info
+		size = Vector2(60, 60)
 		
-		size = Vector2(60, 80)
-		
-		# Background
-		background = ColorRect.new()
+		# Create visual representation
+		var background = ColorRect.new()
 		background.color = Color(0.2, 0.2, 0.2, 0.8)
 		background.size = size
 		add_child(background)
 		
-		# Emoji
-		emoji_label = Label.new()
+		var emoji_label = Label.new()
 		emoji_label.text = info.get("emoji", "❓")
-		emoji_label.size = Vector2(60, 40)
+		emoji_label.size = size
 		emoji_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		emoji_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-		emoji_label.add_theme_font_size_override("font_size", 24)
 		add_child(emoji_label)
-		
-		# Magnitude indicator
-		magnitude_indicator = ProgressBar.new()
-		magnitude_indicator.position = Vector2(10, 50)
-		magnitude_indicator.size = Vector2(40, 8)
-		magnitude_indicator.min_value = 0.0
-		magnitude_indicator.max_value = 1.0
-		add_child(magnitude_indicator)
-		
-		# Make clickable
-		mouse_filter = Control.MOUSE_FILTER_PASS
-		gui_input.connect(_on_gui_input)
-	
-	func _on_gui_input(event):
-		if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-			target_activated.emit(component_index)
 	
 	func set_available(available: bool):
 		is_available = available
-		_update_visual_state()
+		modulate = Color.WHITE if available else Color.GRAY
 	
 	func set_selected(selected: bool):
 		is_selected = selected
-		_update_visual_state()
+		modulate = Color.CYAN if selected else Color.WHITE
 	
-	func _update_visual_state():
-		if is_selected:
-			background.color = Color.CYAN
-			modulate = Color.WHITE
-		elif is_available:
-			background.color = Color.GREEN
-			modulate = Color.WHITE
-		else:
-			background.color = Color(0.2, 0.2, 0.2, 0.8)
-			modulate = Color(0.6, 0.6, 0.6, 0.8)
+	func update_from_state(state: Vector2):
+		# Update visual based on quantum state
+		var intensity = state.length()
+		modulate = Color.WHITE.lerp(Color.YELLOW, intensity * 0.5)
 	
-	func update_from_state(state_vector: Vector2):
-		var magnitude = state_vector.length()
-		magnitude_indicator.value = magnitude
-		
-		# Update visual intensity
-		var intensity = clamp(magnitude, 0.3, 1.0)
-		if not is_selected and not is_available:
-			modulate = Color.WHITE * intensity
+	func _gui_input(event):
+		if event is InputEventMouseButton and event.pressed:
+			if event.button_index == MOUSE_BUTTON_LEFT:
+				target_activated.emit(component_index)
