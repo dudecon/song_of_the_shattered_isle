@@ -3,7 +3,7 @@
 **Song of the Shattered Isle** concept art series  
 **Category:** People & Technology (personal equipment, vehicles, tools, clothing, weapons, music/culture)
 
-**Status:** Complete (core high-priority roster) — All prioritized batches (Watercraft, Instruments + Cultural Events, Clothing & Protection, Domestication scenes) generated and placed. References to other concept art used throughout for full series coherence. Optional tracks (Art/Writing, Weapons, Small Industry) remain available if desired.
+**Status:** Complete (full proposed roster) — All images from the planning roster generated and placed (01–38), including the previously skipped Weapons (05–07) and Art/Writing & Expression (31–33) tracks completed in a final batch. Heavy cross-references to other Concept Art folders for coherence. All material progression and style rules followed.
 
 ---
 
@@ -192,12 +192,12 @@ When generating in a fresh conversation:
 
 **Created:** 06_PeopleTech/00_PeopleTech_Concepts.md (this file)
 
-**Images in folder:** 31 (Full proposed roster complete)
+**Images in folder:** 38 (Full proposed roster complete — all planned images from 01 to 38)
 
-- Previous batches (1–3) as noted above
-- `34_Fenced_Pasture.jpg` — Early animal husbandry pasture with Fur/Frost animals and simple fences
-- `35_Domestication.jpg` — Profound Special Animal-enabled domestication and trust scene (major emotional payoff)
-- **Bonus (optional small industry, generated for completeness):** `36_Hearth_Tools.jpg`, `37_Forge_Tools.jpg`, `38_Explorer_Gear.jpg` — personal-scale tools and complete explorer kit, with subtle robot animal industrial language where appropriate.
+- Full coverage now includes all tracks: Watercraft (01–04), Weapons (05–07), Clothing (08–18), Instruments/Cultural (19–30), Art/Writing (31–33), Domestication (34–35), Small Industry (36–38). See completion batch details below.
+- **Completion batch (skipped tracks, 2026-06-01):** 
+  - `05_Club.jpg`, `06_Spear.jpg`, `07_Bow_Arrows.jpg` — Weapons & Hunting Tools track (Native Wood → Bronze + Wood → Bird + Bronze + Wood). References to early native clothing, Wood animal/flora, Volcano/Metal, Song/Wind Bird, Forest/Meadows.
+  - `31_Charcoal_Drawing.jpg`, `32_Writing.jpg`, `33_Painting.jpg` — Art, Writing & Expression track (Native cave/bark drawings → Squid ink writing → Special + Squid luminous painting). References to Caves island, Squid animal, Special Animal.
 
 **Batches completed:** 
 - **Batch 1: Watercraft (Priority 1)** — 2026-06-01 — All 4 images generated in epic painterly fantasy style, text-cleaned via image_edit, placed with exact filenames. User approved (including the Eel Wake revision).
@@ -205,9 +205,11 @@ When generating in a fresh conversation:
 
 - **Batch 2: Instruments + Cultural Events (Priority 2)** — 2026-06-01 — All 12 images generated in epic painterly fantasy style, text-cleaned, placed with exact filenames. Includes the full instrument families (wind, string, percussion, bells — both early and transcendent tiers) plus the two major cultural events. The Grand Procession was composed as one of the single biggest emotional payoffs in the entire project.
 
-**Next priority:** None — full proposed roster complete (including the optional small industry tracks for completeness).
+- **Completion batch (final coverage)** — 2026-06-01 — Skipped tracks completed in one batch: Weapons & Hunting Tools (05_Club.jpg, 06_Spear.jpg, 07_Bow_Arrows.jpg) and Art, Writing & Expression (31_Charcoal_Drawing.jpg, 32_Writing.jpg, 33_Painting.jpg). All 6 images generated, text-cleaned, placed with exact filenames. Full cross-references to animals (Wood, Bird, Squid, Special), islands (Caves, Forest, Meadows, Volcano), and prior clothing concepts for series-wide coherence.
 
-**Ready for review:** Batch 4 (Domestication) + optional small industry fully generated and ready for your review. All previous batches approved.
+**Next priority:** None — full proposed roster (01–38) now complete.
+
+**Ready for review:** All images, including the final completion batch covering the skipped Weapons and Art/Writing tracks, generated and ready for your review. All prior work approved.
 
 **Minor revision (2026-06-01):** `25_Bells.jpg` — fixed the foreground handbell (was incorrectly reading as a gourd on a stick). Now clearly a proper cast bronze handbell with correct shape and metallic details.
 

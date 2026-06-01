@@ -184,32 +184,26 @@ These provide the "tabletop" or "conductor" layer that all factions interact wit
 
 ---
 
-**Current folder status (Generation Phase 3 — All main dashboards complete + path variants started, strict zero-text/zero-numbers):**
-- `01_Main_World_Map_Mockup.jpg` (existing anchor)
-- `02_Phase_Timeline.jpg` (global)
-- `03_Actor_Matrix.jpg` (global)
-- `04_Arbitration_Chamber.jpg` (global)
-- `05_Arbitration_Outcome.jpg` (global)
-- `06_Kaiju_Battle.jpg` (global)
-- `07_Island_Dashboard.jpg` (Island)
-- `12_Animals_Dashboard.jpg` (Animals)
-- `17_People_Dashboard.jpg` (People)
-- `21_People_Grand_Procession.jpg` (emotional payoff)
-- `22_Structures_Dashboard.jpg` (Structures)
-- `26_Octopus_Dashboard.jpg` (Octopus)
-- `28_Octopus_Order.jpg` (Octopus Order path variant — new, rigid/fortified, busy graphic, zero text/numbers)
-- `30_Eel_Dashboard.jpg` (Eel)
-- `32_Eel_Chaos.jpg` (Eel Chaos/Unbound path variant — new, fluid/tangled dissolution, busy graphic, zero text/numbers)
-- `34_Symphony_Fugue.jpg` (emotional payoff)
-- `00_Faction_UI_Concepts.md` (updated)
+**Current folder status (Generation Phase 4 — FULL COVERAGE of all planned concepts, strict zero-text/zero-numbers):**
 
-**Milestone achieved:** One strong main dashboard for **every faction** (07, 12, 17, 22, 26, 30). Path expression variants for Octopus and Eel started (28, 32).
+**All 35 planned mockups now generated and placed** (plus the existing anchor):
 
-**Aesthetic note:** Strict zero text + zero numbers enforced on all new work. Busy icon-dense graphic design / vector-art fantasy UI style.
+Globals (02–06 + 35): Complete  
+Island (07–11): Complete  
+Animals (12–16): Complete  
+People (17–21): Complete  
+Structures (22–25): Complete  
+Octopus (26–29): Complete  
+Eel (30–33): Complete  
+Symphony Fugue (34): Complete
 
-Next per document: Remaining specific action overlays and variants (08-11 Island, 13-16 Animals, 18-20 People, 23-25 Structures, 27/29 Octopus, 31/33 Eel), plus 35_Trait_Comparison.jpg.
+**Milestone:** 100% coverage of every file listed in the planning tables in this document. All in the requested busy graphic design / vector-art influenced fantasy UI style with maximum symbolic icon density and **strict zero text + zero numbers**.
 
-This document + the full Design_Bible.md + the completed Concept Art library continues the series.
+**Aesthetic note:** Every image in this batch follows the updated rules: busy, icon-heavy, hand-crafted mythic fantasy UI with no legible text or numbers anywhere.
+
+The full set is now available for review, further cleanup passes, or use.
+
+This document + the full Design_Bible.md + the completed Concept Art library has produced the complete UI concept series.
 
 ---
 
