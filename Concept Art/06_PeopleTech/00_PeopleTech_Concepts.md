@@ -192,7 +192,7 @@ When generating in a fresh conversation:
 
 **Created:** 06_PeopleTech/00_PeopleTech_Concepts.md (this file)
 
-**Images in folder:** 16 (Batches 1 & 2 complete)
+**Images in folder:** 26 (Batches 1–3 complete)
 
 **Batches completed:** 
 - **Batch 1: Watercraft (Priority 1)** — 2026-06-01 — All 4 images generated in epic painterly fantasy style, text-cleaned via image_edit, placed with exact filenames. User approved (including the Eel Wake revision).
@@ -202,9 +202,11 @@ When generating in a fresh conversation:
 
 **Next priority:** Batch 3 — Clothing & Protection tracks (clear visual material progression).
 
-**Ready for review:** Batch 2 fully generated and ready for your review. Batch 1 was approved.
+**Ready for review:** Batch 3 (Clothing & Protection) fully generated and ready for your review. Batches 1 & 2 were approved.
 
 **Minor revision (2026-06-01):** `25_Bells.jpg` — fixed the foreground handbell (was incorrectly reading as a gourd on a stick). Now clearly a proper cast bronze handbell with correct shape and metallic details.
+
+**Batch 3 status (2026-06-01):** All 10 Clothing & Protection images generated, text-cleaned, and placed. Clear material progression is visible across all parallel tracks (General Clothing, Hats, Footwear, Armor, Swim/Diving).
 
 ---
 

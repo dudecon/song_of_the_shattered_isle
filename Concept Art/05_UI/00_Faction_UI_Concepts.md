@@ -184,22 +184,25 @@ These provide the "tabletop" or "conductor" layer that all factions interact wit
 
 ---
 
-**Current folder status (Generation Phase 2 — Busy Graphic Aesthetic):**
+**Current folder status (Generation Phase 2 — Busy Graphic Aesthetic, strict zero-text + zero-numbers):**
 - `01_Main_World_Map_Mockup.jpg` (existing anchor)
 - `02_Phase_Timeline.jpg` (global)
+- `03_Actor_Matrix.jpg` (global — full 6-actor influence matrix, extremely icon-dense, clean)
 - `04_Arbitration_Chamber.jpg` (global)
 - `05_Arbitration_Outcome.jpg` (global — resolution overlay, excellent dense icon example)
 - `06_Kaiju_Battle.jpg` (global)
 - `07_Island_Dashboard.jpg` (Island)
-- `12_Animals_Dashboard.jpg` (Animals — busy graphic style with many icons and evolution panels)
+- `12_Animals_Dashboard.jpg` (Animals — busy graphic style, numbers fully removed)
+- `21_People_Grand_Procession.jpg` (major emotional payoff — festival conductor view, dense celebratory icons, cleaned)
+- `26_Octopus_Dashboard.jpg` (Octopus)
 - `34_Symphony_Fugue.jpg` (major emotional payoff — full conductor/fugue state, highly icon-dense graphic masterpiece)
 - `00_Faction_UI_Concepts.md` (updated)
 
-**Aesthetic note:** Now fully in the "busier graphic design / vector-art influenced" mode per feedback. Maximum symbolic icon, emblem, and button density (all zero-text). Still rooted in the epic fantasy materials, glowing elements, and path expression.
+**Aesthetic note:** Now fully in the "busier graphic design / vector-art influenced" mode per feedback. Maximum symbolic icon, emblem, and button density. Strict rule: zero text and zero numbers of any kind (all information via icons, glows, shapes, sizes, colors, and visual stacking only).
 
-Remaining: 03_Actor_Matrix, other faction dashboards (People, Structures, Octopus, Eel), Grand Procession conductor view, and path variants.
+Remaining: 17_People_Dashboard, 22_Structures_Dashboard, 30_Eel_Dashboard (some earlier attempts drifted), path variants for Octopus/Eel, and any refinements.
 
-This document + the full Design_Bible.md + the completed Concept Art library is producing the UI series with the requested denser, icon-rich aesthetic.
+This document + the full Design_Bible.md + the completed Concept Art library is producing the UI series with the requested denser, icon-rich, number-free aesthetic.
 
 ---
 
