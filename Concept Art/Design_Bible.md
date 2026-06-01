@@ -643,9 +643,11 @@ This parallel is one of the quiet strengths of the design. It means that even "r
 - Re-read Bible: Animals roster (matches sheet + evolution rule quote), Three Paths (Octopus "rigid order", Eel "long tangled", Kaiju toggle, musical fugue), Phases table (matches matrix), Peopletech domestication section, new Philosophy section (obscurity, toy-like, indirect control, emergence).
 - Incorporated into stubs below: exact numbers, quotes, synergies, phase states, abilities. User's new mechanics (pop 6-12, fruit pilgrimage, music rhythm, "make long", bureaucracy) aligned with underlying data (fruit per animal, home islands, Special center, Peopletech reqs, "bites... long", mover abilities).
 
-1. **Research & Cross-Reference Pass** (COMPLETED): [details above]. Next: expand stubs per order.
+**Note on Rory (added per latest clarification):** Rory (wildness 547, Eel line, Deepest Place) is an untamable end-game content boss encounter — optional and extremely challenging, akin to Emerald Weapon in FF7. It is not for domestication or regular play; high-tier coordinated animal efforts or pilgrimage parties may encounter it as a major optional threat.
 
-2. **Animals Stub Expansion**: Flesh out population thresholds (6-12), fruit securing/guarding vs Island re-allocation, element/material creation/alter/destroy abilities per animal line, taming mechanics and benefits (as "trained workers"), coordination requirements for fruit pilgrimage to Special Animal (bridges, air lifts, vehicles, self-offering/domestication pacts), and music as the universal coordinating language (daily/seasonal/epochal rhythms building to fugue dance). Emphasize indirect control and emergence per the Design Philosophy.
+1. **Research & Cross-Reference Pass** (COMPLETED): [details above]. 
+
+2. **Animals Stub Expansion** (COMPLETED this step): Fleshed out with all user-provided gameplay details (population thresholds 6-12 for evolution, fruit securing/guarding vs People plundering and Island re-allocation, element/material creation/alter/destroy abilities, taming for People as equivalent to trained workers/craftsmen, People may kill instead, animals' starting islands vs need to deliver fruit to Special Animal at central spire via inter-species coordination (bridges/roads/stairs, vehicles, flying animals, high-tier animals offering themselves/services/domestication pacts even to People to restore the Isle), music as core coordinating element (rhythm of day/week/season/epoch aspiring to single coherent jubilant dance/fugue)). Incorporated Rory note (untamable end-game optional boss like Emerald Weapon) in Eel relationship and Design Notes as a pilgrimage challenge. Emphasized indirect control (influencing populations/herds rather than direct unit control), emergence (coordination and music create surprising outcomes), and the Design Philosophy (obscure mechanics, toy-like exploration, player builds mental model or uses AI interpreter). Expanded all subsections, including a much fuller Playable Faction Experience. Rory clarification integrated.
 
 3. **People Stub Expansion**: Detail the "raising of Atlantis" arc — early plunder/harvest phase, transition to cultivation + rhythm coordination + domestication (Animals as powerful alternative to tech sprawl), invoking Island for responsible mining, late-game co-opting Island/Octopus to raise ruins. Emphasize the narrow corrective path and how partial failures (over-harvest, over-domestication) can still converge.
 
@@ -674,80 +676,90 @@ Stubs below are functional placeholders. They contain the latest provided gamepl
 
 ---
 
-### Animals as Playable Faction: The Evolutionary Choir *(Stub)*
+### Animals as Playable Faction: The Evolutionary Choir
 
-The Animals faction represents the living, growing, instinctual voice of the world — the choir that must learn to sing together. Gameplay centers on securing resources to grow populations, unlocking evolutions, and ultimately coordinating a pilgrimage of fruit offerings to the Special Animal at the Central Spire. Success requires both competition with People and cooperation across species, often through music and temporary domestication pacts.
+The Animals faction represents the living, growing, instinctual voice of the world — the choir that must learn to sing together. Gameplay centers on finding and securing food/fruit sources (defending them both against People plundering and the fickle Island re-allocating land to other purposes) to support larger populations of each species. When a population reaches a critical threshold (roughly 6–12 individuals), the next evolutionary stage/level becomes available, and the process repeats. Each animal line has an associated element or material it can create, alter, or destroy (e.g., Grass makes grass grow faster and more abundantly). Untamed, these abilities are wild and instinctual. When tamed or domesticated by People, the animals become equivalent to trained workers or craftsmen equipped with tools and a workshop — extremely desirable living assets for the restoration of the Shattered Isle. However, because animals guard their fruit and home islands, People may opt to simply kill them for short-term gains rather than invest in capture and domestication.
+
+All animals begin on their own starting islands (per the Islands sheet and roster), but to achieve the true goal they must deliver their signature fruits (at appropriate tiers) to the Special Animal at the Central Spire (Island 8). This fruit pilgrimage requires extensive coordination between different species — constructing bridges, roads, and stairs; building or using vehicles; having flying animals carry fruit across distances; or even high-tier animals offering themselves and their services (including pacts of domestication with other animals or with People) to make the journey possible and restore the Isle. Music serves as the core coordinating element: the rhythm of every day, week, season, and epoch aspires to align into a single coherent, jubilant dance/fugue that enables collective action and the greater symphony.
+
+The player exerts **indirect control** — setting conditions for population growth and defense, facilitating (or strategically withholding) inter-species pacts, and influencing musical rhythms — rather than micromanaging individuals. Outcomes emerge from the complex interactions of wildness, population thresholds, material abilities, coordination choices, and external pressures (People, Island, Octopus, Eel). This aligns with the Design Philosophy: the game is obscure and wondrous by design; there is no tutorial explaining the 6–12 threshold, the value of self-offering for domestication, or the precise power of aligned rhythms. Players (or their AI interpreters) must discover, model, and experiment to succeed. The experience has strong "toy-like" qualities: many paths to contribute to the pilgrimage, and the joy lies in the emergent harmony (or tragic discord) that results.
 
 #### Core Identity and Timescale
 Animals map to "dino" (including the plant-like Grass and Wood) in the faction system. From the Faction Trait Mapping they carry **Might 1, Wisdom 3, Honor -1, Power 1** (total 4). High Wisdom reflects pattern recognition and adaptation; the weakness in Honor reflects their initially wild, self-interested nature until coordinated through music and pilgrimage.
 
-Native Wildness scores (from Animals sheet) determine domestication difficulty (wildness × individual level): e.g., Stove 447 (extremely high), Eel 335, Rory 547, Octopus 212, Dragon not-tamable (kill for fruit), many others 0-13. 
+Native Wildness scores (from Animals sheet) determine domestication difficulty (wildness × individual level): e.g., Stove 447 (extremely high), Eel 335, Rory 547, Octopus 212, Dragon not-tamable (kill for fruit), many others 0–13. 
 
 Natural timescale is generational and seasonal — herds grow, evolve, and migrate on the scale of years to decades, faster than Island geology but slower than individual human decisions. Their "pieces" are populations, fruit sources, migration routes, and evolving abilities tied to materials/elements.
 
-**Core Evolution Rule (exact from spreadsheet and Bible):** Animals eat lvl-1, create lvl+1 product (with lvl as ~10× byproduct). lvl+1 and up are impassable. Shapes lvl and lvl-1. Sinks/passes through lvl-2 on contact. Excludes lvl-3 and lower in increasing radius. Evolution paths are 0-4/5 with signature fruits (detailed in the full roster table in section 5 and the Animals sheet fruit columns).
+**Core Evolution Rule (exact from spreadsheet and Bible):** Animals eat lvl-1, create lvl+1 product (with lvl as ~10× byproduct). lvl+1 and up are impassable. Shapes lvl and lvl-1. Sinks/passes through lvl-2 on contact. Excludes lvl-3 and lower in increasing radius. Evolution paths are 0–4/5 with signature fruits (detailed in the full roster table in section 5 and the Animals sheet fruit columns).
 
 The central drive: reach and protect the Special Animal while expanding their own kind. Everything starts scattered and angry ("Animal Rage"). The goal is not domination but contributing their unique voice (and fruit) to the greater fugue.
 
 #### Signature Mechanics and "Moves"
 **Population & Evolution Loop**
-- Secure and defend food/fruit sources against People plundering and the fickle Island re-allocating land.
-- When a population of a species reaches a critical threshold (roughly 6-12 individuals), the next evolutionary stage becomes available.
-- Upgrade process repeats. Higher tiers unlock stronger material/element abilities and coordination options.
+- Find and secure food/fruit sources to support larger populations of the species.
+- Defend against People plundering the fruit and against the Island capriciously re-allocating the land (changing biomes or habitats).
+- When a population of a species reaches a critical threshold (roughly 6–12 individuals), the next evolutionary stage/level becomes available.
+- The upgrade process repeats. Higher tiers grant stronger versions of the line’s material/element abilities and open new coordination options for the pilgrimage.
 
 **Material/Element Abilities**
-- Each animal line is tied to an element or material they can create, alter, or destroy (e.g., Grass makes grass grow faster; other examples from roster and flora: Scales for armor-like hardening, Fur for insulation/softening, Wood for building/breaking, Song Bird for musical resonance, etc.).
-- Untamed, these are wild, instinctual effects.
-- When domesticated/tamed by People, they function as trained workers or craftsmen with tools and a workshop — extremely desirable "living technology."
+- Each animal line is tied to an element or material it can create, alter, or destroy (full mapping in Animals sheet and flora concepts; e.g., Grass makes grass grow faster; Scales can harden or armor surfaces; Fur insulates or softens; Wood builds/breaks structures; Song Bird resonates musically; Wind Bird affects air/currents; Stove/Flame manipulate heat/fire; etc.).
+- Untamed, these are wild, instinctual, and sometimes destructive effects.
+- When tamed/domesticated by People, the animals use these abilities as equivalent to a trained worker/craftsman with tools and a workshop — highly desirable "living technology" that can shortcut or replace sprawling Peopletech infrastructure.
 
-**Guarding vs. Being Hunted**
-- Animals guard their fruit and home islands.
-- People may attempt capture for domestication or simply kill for immediate resources. This creates a constant tension between wild autonomy and negotiated partnership.
+**Guarding vs. Being Hunted / Domestication Tension**
+- Animals naturally guard their fruit sources and home islands.
+- People may attempt to capture them for domestication (gaining the material abilities as powerful allies) or simply kill them for immediate resources and to remove competition.
+- Successful domestication requires investment (fenced pastures, the Special Animal’s involvement for full effect per Peopletech) and creates reciprocal value: domesticated animals help with coordination and the pilgrimage.
+- High-tier animals may voluntarily offer themselves for domestication (to other animals or to People) as part of the necessary coordination to deliver fruit and restore the Isle.
 
 **The Fruit Pilgrimage to the Special Animal**
-- All animals must eventually deliver their signature fruits (at appropriate tiers) to the Special Animal in the Central Spire (Island 8). The Special Animal (wildness 55, archaic living fossil/fire, rainbow/gold/silver) is unique: "Only protects the other animals, doesn't build anything. Friends with the Eel and Squid and Octopus." It helps upgrades.
-- Specific fruits from Animals sheet (examples): Cleanerbird "acorn black dragon scale fruit", Wood "apple-pear (irridescent)", Dragon "Black-Dragonscale", Fur "hairy-peach", many others like Furry-Acorn (Finder/Core), Icicle Carrot (Frost), Lava Orange (Stove), etc. Full table in Animals sheet columns 4+ and section 5 roster.
-- This requires inter-species coordination:
-  - Constructing bridges, roads, stairs (often with Wood/Grass or Structures help; Peopletech has Path/Bridge/Sky Causeway using Bird/Grass/Wood/fur/Stone/Scales).
-  - Vehicles or transport (Peopletech boats, Construct for animation).
-  - Flying animals carrying fruit (Wind Bird, Dragon).
-  - High-tier animals offering themselves and their services (including temporary or permanent domestication pacts with People or other animals).
-- Failure to coordinate dooms the restoration. Home islands (from Islands sheet and roster) must be left for the central goal: e.g., 13 Thornbush (Dragon/Cleanerbird), 2 Peaks (Frost/Fur), 9 Deepest Place (Eel/Rory), etc. Island 11/12 become adventure ports/islands in endgame.
+- Every animal line must eventually deliver its signature fruits (at the right evolutionary tiers) to the Special Animal in the Central Spire (Island 8). The Special Animal (wildness 55, archaic living fossil/fire, rainbow/gold/silver, home Island 8) is unique: "Only protects the other animals, doesn't build anything. Friends with the Eel and Squid and Octopus." It helps upgrades and is the focal point everything aspires toward.
+- Specific fruits (from Animals sheet, examples): Cleanerbird "acorn black dragon scale fruit"; Wood "apple-pear (irridescent)"; Dragon "Black-Dragonscale"; Fur "hairy-peach"; Finder/Core "Furry-Acorn"; Frost "Icicle Carrot"; Stove "Lava Orange"; many more (full table in Animals sheet columns and section 5 roster). The fruit table in the initial design notes further details evolution-stage fruits and home-island ties.
+- This pilgrimage requires coordination across species because animals start on separate home islands (e.g., 13 Thornbush = Dragon + Cleanerbird; 2 Peaks = Frost + Fur; 9 Deepest Place = Eel + Rory; 12 Gulley = Finder + Core; 4 Forest = Wood; etc.; see Islands sheet and roster). Coordination methods include:
+  - Constructing bridges, roads, stairs, and other infrastructure (leveraging Wood/Grass abilities or allying with Structures/Peopletech paths like Path → Bridge → Sky Causeway using Bird + Grass + Wood + fur + Stone + Scales).
+  - Vehicles and transport (Peopletech boats, Construct for animating structures).
+  - Flying animals carrying fruit (Wind Bird, Dragon lines).
+  - High-tier animals offering themselves and their services, including pacts of domestication with other animal groups or with People.
+- Failure to achieve this multi-species coordination dooms the restoration of the Shattered Isle. Island 11 (Human) becomes adventure ports and Island 12 (Gulley) adventure islands in the endgame, supporting mixed crews.
 
-**Music as Coordinating Force**
-- Music is the universal language and rhythm-keeper.
+**Music as the Core Coordinating Element**
+- Music is the universal language and rhythm-keeper across all factions.
 - The rhythm of every day, week, season, and epoch aspires to become a single coherent, jubilant dance/fugue.
-- Higher-tier Song Birds, instruments from Peopletech, and collective actions can align or disrupt these rhythms, affecting coordination, morale, and even Island/Octopus/Eel states.
+- Higher-tier Song Birds (home Karst Pillars, musical element, fruit on cloud trees), instruments unlocked via Peopletech (Pipes → Woodwinds, Strings → Bass Strings, Drums → Bass Drums, Bells → Diamond Bells, Melody → Harmony, Dance → Procession), and collective actions can align (or disrupt) these rhythms.
+- Successful alignment enables large-scale coordination for the pilgrimage, boosts morale, and can even influence Island processes, Octopus control, or Eel lengthening. Misalignment leads to discord and failure. The Grand Procession (highest Peopletech cultural event) and the final Symphony state represent the pinnacle of this musical coordination.
 
 #### Relationships to the Other Factions
-**With People**: Symbiotic but fraught. Domestication turns animals into powerful alternatives to industrial infrastructure. Over-hunting or poor treatment can drive species to extinction or rebellion. Successful pacts allow Animals to "lend" their abilities for the greater restoration.
+**With People**: Symbiotic but fraught. Domestication turns animals into powerful alternatives to industrial infrastructure (see Peopletech synergies and the "living workers" mechanic). Over-hunting or poor treatment can drive species to extinction or rebellion. Successful pacts allow Animals to "lend" their abilities for the greater restoration and pilgrimage. People may kill instead of tame when resources are scarce or coordination seems too difficult.
 
-**With Island**: The Island provides habitat but can capriciously re-allocate land or trigger storms that destroy populations and fruit sources. Animals must learn the Island's slow rhythms.
+**With Island**: The Island provides (and can capriciously re-allocate) habitat and fruit sources. Animals must learn the Island’s slow rhythms to secure land and defend against re-allocation or storms. In the Symphony state the Island becomes a responsive partner.
 
-**With Structures**: Wild flora (Grass/Wood) are the Animals' own "living structures." Built Structures can support or pave over animal habitats. Construct animals bridge the two.
+**With Structures**: Wild flora (Grass and Wood lines) are the Animals’ own "living structures" — organic, self-replicating architecture (as explored in the Structures section). Built Structures can support animal habitats and the pilgrimage (bridges, platforms) or pave them over, accelerating Eel risk. Construct animals (natively tamable by People) serve as a bridge between wild and built.
 
-**With Octopus**: The Octopus may try to "return" animals to their "proper" home islands, disrupting coordinated efforts. Over-control suppresses the wild mixing needed for pilgrimage.
+**With Octopus**: The Octopus may try to "return" animals to their "proper" home islands or impose rigid zones, directly disrupting the mixing and travel required for the fruit pilgrimage. Over-control by Octopus suppresses the wild coordination the restoration needs.
 
-**With Eel**: Lengthening can distort migrations or abilities in useful or disastrous ways. The Eel is both a danger and a potential strange ally for "long" connections across the shattered isles.
+**With Eel**: Lengthening can distort migrations or abilities in useful (new connections) or disastrous (loss of identity, chimeric forms) ways. The Eel is both a danger and a potential strange ally for "long" connections across the shattered isles. **Note on Rory**: The Eel line culminates in Rory (wildness 547, aether element, Deepest Place) as an untamable end-game content boss encounter — optional and extremely challenging (comparable to Emerald Weapon in Final Fantasy 7). High-tier coordinated animal groups or pilgrimage parties may encounter Rory as a major threat they must cleverly avoid, distract, or overcome; it is not tamable and represents the extreme danger of unchecked chaotic lengthening.
 
-**With Special Animal**: The ultimate focal point. All paths lead here.
+**With Special Animal**: The ultimate focal point and protector. All paths and efforts lead here. The Special Animal helps upgrades and is friends with Eel, Squid, and Octopus — a key diplomatic bridge in the pilgrimage.
 
 #### The Animals in the Three Paths and the Symphony
-- **Narrow Gate**: Coordinated, multi-species fruit deliveries with minimal loss. Music aligns everything. Temporary domestication is used wisely and reciprocally.
-- **Order Path (Octopus dominant)**: Animals are segregated to home islands, heavily "managed" or culled. Pilgrimage becomes regimented and incomplete. Music is martial or silenced.
-- **Chaos Path (Eel dominant)**: Populations mix chaotically through lengthening. Fruit is delivered but identities blur. Music becomes wild, tangled, ecstatic or cacophonous.
-- **Symphony**: Every species contributes its evolved voice and fruit. Domesticated animals work alongside wild ones in harmonious partnership. The pilgrimage becomes a grand, rhythmic procession. The choir sings as one while remaining distinct.
+- **Narrow Gate**: Coordinated, multi-species fruit deliveries with minimal loss of life or identity. Music aligns day-to-epoch rhythms into a single jubilant dance. Temporary or reciprocal domestication is used wisely. High-tier animals offer themselves strategically.
+- **Order Path (Octopus dominant)**: Animals are segregated back to home islands, heavily "managed," culled, or rigidly categorized. The pilgrimage becomes regimented, incomplete, or impossible. Music is martial, controlled, or silenced.
+- **Chaos Path (Eel dominant)**: Populations mix chaotically through lengthening; fruit may arrive but species identities blur or are lost. Music becomes wild, tangled, ecstatic, or cacophonous. Rory-level threats are more likely to appear.
+- **Symphony**: Every species contributes its fully evolved voice and fruit. Domesticated animals work alongside wild ones in harmonious partnership. The pilgrimage becomes a grand, rhythmic, musical procession involving all factions. The choir sings as one while each line remains distinct; rhythms from every scale lock into the final jubilant dance. The Special Animal is protected and central. Rory, if encountered, is an optional challenge that tests the maturity of the coordinated effort rather than an existential threat.
 
 #### Design Notes for Playable Animals
-- The player does not control individual animals directly but influences populations, defends fruit sources, directs evolution priorities, and brokers coordination pacts.
-- This faction rewards patient observation of rhythms (seasonal, musical, migratory) and clever inter-species alliances.
-- Fits the "obscure and emergent" philosophy: the full coordination puzzle is not explained; players discover it through play and pattern recognition (or AI-assisted analysis).
-- Strong "toy" quality — many ways to "win" or simply explore the evolutionary symphony.
+- The player does not control individual animals directly but influences populations (by securing/defending fruit sources), defends against plunder and Island re-allocation, directs evolution priorities, and brokers (or withholds) inter-species and People coordination pacts. Music becomes a high-level lever for enabling or disrupting large-scale action.
+- This faction rewards patient observation of rhythms (seasonal, migratory, musical) and clever, often sacrificial, inter-species alliances — including the difficult choice to offer high-tier animals for domestication or to face Rory-level threats.
+- Fits the "obscure and emergent" Design Philosophy perfectly: there is no in-game explanation of the precise 6–12 population threshold, the exact power of a lengthened migration, or when offering an animal for domestication is the only path forward. Players discover these through experimentation, failure, and pattern recognition (or by using external AI to model the simulation). The experience is toy-like: many valid ways to contribute to the pilgrimage, and the real reward is the emergent harmony (or beautiful tragedy) that results.
+- Strong narrative tie to the father/daughter origin: the animals (daughter’s ideas) must learn to work together, sometimes at personal cost, to reach the protector in the center.
 
-#### Playable Faction Experience *(Stub)*
-*(To be expanded: the feeling of guiding herds, the tension of defending vs. sacrificing for the greater good, the joy of hearing disparate rhythms lock into a single dance, the sorrow of a line going extinct, the wonder of a high-tier animal choosing to offer itself for the pilgrimage.)*
+#### Playable Faction Experience
+Playing as Animals feels like guiding a living, evolving choir through a broken world that is both ally and adversary. Early play is raw and angry — desperate defense of fruit sources, watching populations dwindle to People raids or Island whims, discovering that your own kind’s abilities are double-edged. As populations grow and evolutions unlock, the player feels the power of material mastery (Grass spreading life, Scales hardening defenses, Song Birds beginning to harmonize distant groups). The pilgrimage introduces the hardest and most rewarding layer: realizing that no single species can succeed alone. The player must orchestrate fragile alliances — building infrastructure with Wood lines, airlifting with Wind/Dragon, negotiating domestication pacts that feel like both victory and loss when a beloved high-tier animal offers itself. Music becomes visceral: aligning a seasonal rhythm with a Song Bird migration or a Peopletech festival can suddenly make the impossible possible, creating moments of genuine jubilation. Failure is frequent and meaningful — a line going extinct, a pilgrimage party scattered by Octopus intervention or Eel lengthening, or confronting the terrifying optional boss Rory as the ultimate test of whether the choir has truly learned to sing together. Success in the Symphony state is not conquest but contribution: every distinct voice, wild or domesticated, adding its evolved fruit and ability to the final, coherent, dancing whole. The player experiences the profound satisfaction of having helped something far larger than any individual herd come into being through patience, sacrifice, and emergent harmony. It is wondrous, sometimes heartbreaking, and deeply tied to the project’s theme that the highest state is polyphonic balance rather than any one force dominating.
 
 ---
+
+### People as Playable Faction: Restorers of the Lost Civilization *(Stub)*
 
 ### People as Playable Faction: Restorers of the Lost Civilization *(Stub)*
 
