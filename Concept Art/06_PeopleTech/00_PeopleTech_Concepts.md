@@ -3,7 +3,7 @@
 **Song of the Shattered Isle** concept art series  
 **Category:** People & Technology (personal equipment, vehicles, tools, clothing, weapons, music/culture)
 
-**Status:** In progress — Batch 1 (Watercraft) generated and placed. Subsequent batches to follow in review cycles.
+**Status:** Complete (core high-priority roster) — All prioritized batches (Watercraft, Instruments + Cultural Events, Clothing & Protection, Domestication scenes) generated and placed. References to other concept art used throughout for full series coherence. Optional tracks (Art/Writing, Weapons, Small Industry) remain available if desired.
 
 ---
 
@@ -192,7 +192,12 @@ When generating in a fresh conversation:
 
 **Created:** 06_PeopleTech/00_PeopleTech_Concepts.md (this file)
 
-**Images in folder:** 26 (Batches 1–3 complete)
+**Images in folder:** 31 (Full proposed roster complete)
+
+- Previous batches (1–3) as noted above
+- `34_Fenced_Pasture.jpg` — Early animal husbandry pasture with Fur/Frost animals and simple fences
+- `35_Domestication.jpg` — Profound Special Animal-enabled domestication and trust scene (major emotional payoff)
+- **Bonus (optional small industry, generated for completeness):** `36_Hearth_Tools.jpg`, `37_Forge_Tools.jpg`, `38_Explorer_Gear.jpg` — personal-scale tools and complete explorer kit, with subtle robot animal industrial language where appropriate.
 
 **Batches completed:** 
 - **Batch 1: Watercraft (Priority 1)** — 2026-06-01 — All 4 images generated in epic painterly fantasy style, text-cleaned via image_edit, placed with exact filenames. User approved (including the Eel Wake revision).
@@ -200,13 +205,20 @@ When generating in a fresh conversation:
 
 - **Batch 2: Instruments + Cultural Events (Priority 2)** — 2026-06-01 — All 12 images generated in epic painterly fantasy style, text-cleaned, placed with exact filenames. Includes the full instrument families (wind, string, percussion, bells — both early and transcendent tiers) plus the two major cultural events. The Grand Procession was composed as one of the single biggest emotional payoffs in the entire project.
 
-**Next priority:** Batch 3 — Clothing & Protection tracks (clear visual material progression).
+**Next priority:** None — full proposed roster complete (including the optional small industry tracks for completeness).
 
-**Ready for review:** Batch 3 (Clothing & Protection) fully generated and ready for your review. Batches 1 & 2 were approved.
+**Ready for review:** Batch 4 (Domestication) + optional small industry fully generated and ready for your review. All previous batches approved.
 
 **Minor revision (2026-06-01):** `25_Bells.jpg` — fixed the foreground handbell (was incorrectly reading as a gourd on a stick). Now clearly a proper cast bronze handbell with correct shape and metallic details.
 
 **Batch 3 status (2026-06-01):** All 10 Clothing & Protection images generated, text-cleaned, and placed. Clear material progression is visible across all parallel tracks (General Clothing, Hats, Footwear, Armor, Swim/Diving).
+
+**Batch 4 status (2026-06-01):** Domestication scenes generated with strong references to existing concept art for coherence:
+- 34_Fenced_Pasture.jpg — Early fenced enclosure with Fur animals (referencing 01_Animals/13_Fur.jpg and 14_Frost.jpg), simple Wood/Bamboo fences, humans in Fur Clothes and Scale Shoes (from Batch 3 clothing), Peaks/Gulley highland setting (referencing 02_Islands/02_Peaks.jpg).
+- 35_Domestication.jpg — The emotional core: profound trust moment between humans (advanced clothing) and a high-tier evolved Fur animal, enabled and blessed by the Special Animal's rainbow transcendent presence (directly referencing 01_Special_Animal.jpg for the creature and atmosphere, plus 01_Animals/13_Fur.jpg for the animal form). Peaceful, sacred, one of the most resonant payoffs in the series. Set in a harmonious meadow with glowing elements.
+
+**Optional small industry (generated for full roster completeness, 2026-06-01):** 
+- 36_Hearth_Tools.jpg, 37_Forge_Tools.jpg, 38_Explorer_Gear.jpg — personal equipment scale only, with subtle references to robot animal (Stove/Metal/Flame/Construct) aesthetic for industrial tools. The Explorer's Kit composites many elements from previous batches for a satisfying "complete adventurer" look.
 
 ---
 

@@ -184,25 +184,32 @@ These provide the "tabletop" or "conductor" layer that all factions interact wit
 
 ---
 
-**Current folder status (Generation Phase 2 — Busy Graphic Aesthetic, strict zero-text + zero-numbers):**
+**Current folder status (Generation Phase 3 — All main dashboards complete + path variants started, strict zero-text/zero-numbers):**
 - `01_Main_World_Map_Mockup.jpg` (existing anchor)
 - `02_Phase_Timeline.jpg` (global)
-- `03_Actor_Matrix.jpg` (global — full 6-actor influence matrix, extremely icon-dense, clean)
+- `03_Actor_Matrix.jpg` (global)
 - `04_Arbitration_Chamber.jpg` (global)
-- `05_Arbitration_Outcome.jpg` (global — resolution overlay, excellent dense icon example)
+- `05_Arbitration_Outcome.jpg` (global)
 - `06_Kaiju_Battle.jpg` (global)
 - `07_Island_Dashboard.jpg` (Island)
-- `12_Animals_Dashboard.jpg` (Animals — busy graphic style, numbers fully removed)
-- `21_People_Grand_Procession.jpg` (major emotional payoff — festival conductor view, dense celebratory icons, cleaned)
+- `12_Animals_Dashboard.jpg` (Animals)
+- `17_People_Dashboard.jpg` (People)
+- `21_People_Grand_Procession.jpg` (emotional payoff)
+- `22_Structures_Dashboard.jpg` (Structures)
 - `26_Octopus_Dashboard.jpg` (Octopus)
-- `34_Symphony_Fugue.jpg` (major emotional payoff — full conductor/fugue state, highly icon-dense graphic masterpiece)
+- `28_Octopus_Order.jpg` (Octopus Order path variant — new, rigid/fortified, busy graphic, zero text/numbers)
+- `30_Eel_Dashboard.jpg` (Eel)
+- `32_Eel_Chaos.jpg` (Eel Chaos/Unbound path variant — new, fluid/tangled dissolution, busy graphic, zero text/numbers)
+- `34_Symphony_Fugue.jpg` (emotional payoff)
 - `00_Faction_UI_Concepts.md` (updated)
 
-**Aesthetic note:** Now fully in the "busier graphic design / vector-art influenced" mode per feedback. Maximum symbolic icon, emblem, and button density. Strict rule: zero text and zero numbers of any kind (all information via icons, glows, shapes, sizes, colors, and visual stacking only).
+**Milestone achieved:** One strong main dashboard for **every faction** (07, 12, 17, 22, 26, 30). Path expression variants for Octopus and Eel started (28, 32).
 
-Remaining: 17_People_Dashboard, 22_Structures_Dashboard, 30_Eel_Dashboard (some earlier attempts drifted), path variants for Octopus/Eel, and any refinements.
+**Aesthetic note:** Strict zero text + zero numbers enforced on all new work. Busy icon-dense graphic design / vector-art fantasy UI style.
 
-This document + the full Design_Bible.md + the completed Concept Art library is producing the UI series with the requested denser, icon-rich, number-free aesthetic.
+Next per document: Remaining specific action overlays and variants (08-11 Island, 13-16 Animals, 18-20 People, 23-25 Structures, 27/29 Octopus, 31/33 Eel), plus 35_Trait_Comparison.jpg.
+
+This document + the full Design_Bible.md + the completed Concept Art library continues the series.
 
 ---
 
