@@ -80,4 +80,47 @@ All images use the established epic painterly fantasy style of the series (match
 - Heavy industrial and mechanical language drawn from the robot animals (Stove, Metal, Flame, Construct) for later and more advanced structures.
 - Endgame harbor (13) should feel like the emotional and visual payoff — grand, hopeful, mixed crews, beautiful integration of old and new.
 
-**Status:** Planning complete. Generation in progress.
+## Current Generation Status (as of latest session)
+
+**Successfully placed in folder:**
+- 01_Native_Hut.jpg
+- 02_Grass_Huts.jpg
+- 03_Wooden_Houses.jpg
+- 04_Fur_Longhouse.jpg
+- 05_Stone_Tower.jpg
+- 06_Advanced_Tower.jpg
+- 07_Hearth_and_Chimney.jpg
+- 08_Volcano_Forge.jpg
+- 09_Industrial_Smelter.jpg
+- 10_Wooden_Docks.jpg
+- 11_Stone_Piers.jpg
+- 12_Sea_Platforms.jpg
+- 13_Adventure_Harbor.jpg
+- 14_Caves_Mine.jpg
+- 15_Volcanic_Mine.jpg
+- 16_Road_and_Bridge.jpg
+- 18_Bell_Tower.jpg
+- 19_Amphitheater.jpg
+
+**Remaining to generate (0 total):**
+- (All 22 images complete)
+
+**All images complete.**
+
+**Final set (22/22):**
+- Early/Foundational (01-02)
+- Housing & Towers (03-06)
+- Industry & Heat (07-09)
+- Maritime Infrastructure (10-13)
+- Mining & Excavation (14-15)
+- Land Infrastructure (16-17)
+- Cultural & Special (18-19)
+- Narrative / Path-Specific (20-22)
+
+**Notes on style (for reference):**
+- Early structures: more organic / thatch / grass / wood
+- Mid: solid wood + stone
+- Late / industrial: heavy metal, riveted plating, pipes, mechanical details — strongly referencing the aesthetic of the robot animals (Stove, Metal, Flame, Construct)
+- Narrative variants for the final three: Order (fortified/rigid), Eel/Chaos (overgrown/tangled/interconnected), Symphony (living hybrid with growing Wood + Grass integrated)
+
+**Status:** 22 of 22 complete. Full Structures concept art series delivered. The progression from humble organic beginnings through solid engineering and heavy industry to the three distinct narrative visions (Order control, Chaos entanglement, and true Symphony harmony) is visually and thematically cohesive with the rest of the Song of the Shattered Isle concept art. Sky Causeway and the three path finales are particularly strong emotional and visual payoffs.
