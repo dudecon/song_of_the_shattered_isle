@@ -159,10 +159,10 @@ This is the heart of the document. Animals have:
 
 **Core Evolution Rule (from spreadsheet):**
 
-> Animals eat lvl-1, create lvl+1 product (with lvl as \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\~10× byproduct).  
+> Animals eat lvl-1, create lvl+1 product (with lvl as \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\~10× byproduct).  
 > lvl+1 and up are impassable. Shapes lvl and lvl-1. Sinks/passes through lvl-2 on contact. Excludes lvl-3 and lower in increasing radius.
 
-### Animal Roster (condensed)
+### Animal Roster
 
 |Animal|Wildness|Type / Element|Home Island|Signature Trait / Note|
 |-|-|-|-|-|

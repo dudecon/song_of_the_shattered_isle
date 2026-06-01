@@ -1,0 +1,31 @@
+Animal|Wildness|Notes
+Name|Multiply by individual level for domestication difficulty|(animals eat lvl - 1, creates lvl + 1 product with lvl as a ~10x byproduct. lvl + 1 and up are impassible, Shapes lvl and lvl - 1, sinks/passes through lvl - 2 on contact, excludes lvl - 3 and lower in increasing radius)
+Cleanerbird|not-tamable (has to be killed to get the fruit)|nan
+Wood|2|Like an ostritch. Builds, makes, breaks wood.
+Dragon|not-tamable (has to be killed to get the fruit)|Fruit is bittersweet, it eats the fruit when it is little, eats fish when it is big, aquatic dragon, but can also fly
+Blade Fish|123|nan
+Fish|0|nan
+Flame|0|nan
+Finder|5|Opposite of the Hider. Doesn't like water. Like Fur, but stronger. It needs fluff to get people closer to it. Can see well, but doesn't know what food is. When the islands are reunited, the finder goes to island 5 and then takes the metal to the people on island 11.
+Core|5|Helps find food for the Finder. Can't understand metal. Eyes are white.
+Hider|54|Can make the moon disappear (‽ cover with a cloud) because it stresses him out. it also buries treasure and digs tunnels and steals things and hides them.
+Rock|5|Makes everything underground (except dirt) builds from rock & brick (and sometimes metal)
+Fur|1|Hates getting wet, can go really cold places, but not warm places, can't swim
+Frost|0|Natively tamed? Hunting partner.
+Clog Fish|67|Helps the blobfish move, because otherwise it can't move
+Blob Fish|89|If you attack the egg, it goes CRAZY and kills stuff.
+Stove|447|nan
+Metal|8|builds with metal (and sometimes rock) very slow, carries a lot of stuff, island has a volcano mountain in the middle.
+squirm|0|I made this one up, to root the higher-level incarnations
+Scales|3|for making armor and shoes
+Eel|335|lives in the deepest place. The last of its kind (can not make eggs?) Doesn't know how to be friendly so the animals have to teach it. People and industry wakes it. Easily startled, bites things and makes them long (octopus arms, roads, towers, trees, grass, feathers, clothes, fur). Cousin of the octopus, which he bit, which is why the tentacles are so long. Also the squid's cousin.
+Squid|21|Swims and sometimes crawls, amphibious, swims up waterfalls, loves to visit brother octopus. Loves decorations and colors, especially traditional when visitors come over.
+Wind Bird|34|Brother of the Song Bird, eats fish, feeds the song bird. Very noisy, loud, the fastest. Only builds nests high up and made of wood. Solid-cloud sky island? Builds lower as it increases in level.
+Construct|0|Humans have natively tamed this animal. Can animate buildings and make them into walking robot things.
+Grass|1|Has to stay wet, makes plants grow faster, can make dirt? Flightless.
+Song Bird|13|Brother of the Wind Bird, musical, fruit grows on a cloud tree which grows on top of a cloud that is green on top.
+Octopus|212|nan
+Special Animal|55|Only protects the other animals (and helps upgrade them). Can walk on land, hover, swim, and float. can't build. Friends with the eel & squid & octopus. Unique (only one of them)
+Furball|0|Has fur and a coat of scales, Cross between a fish and a gunneapig, runs away from everything, very tasty
+Rory|547|boss fight monster?
+grass, wood, scales, song, wind|nan|nan
