@@ -649,15 +649,9 @@ This parallel is one of the quiet strengths of the design. It means that even "r
 
 2. **Animals Stub Expansion** (COMPLETED this step): Fleshed out with all user-provided gameplay details (population thresholds 6-12 for evolution, fruit securing/guarding vs People plundering and Island re-allocation, element/material creation/alter/destroy abilities, taming for People as equivalent to trained workers/craftsmen, People may kill instead, animals' starting islands vs need to deliver fruit to Special Animal at central spire via inter-species coordination (bridges/roads/stairs, vehicles, flying animals, high-tier animals offering themselves/services/domestication pacts even to People to restore the Isle), music as core coordinating element (rhythm of day/week/season/epoch aspiring to single coherent jubilant dance/fugue)). Incorporated Rory note (untamable end-game optional boss like Emerald Weapon) in Eel relationship and Design Notes as a pilgrimage challenge. Emphasized indirect control (influencing populations/herds rather than direct unit control), emergence (coordination and music create surprising outcomes), and the Design Philosophy (obscure mechanics, toy-like exploration, player builds mental model or uses AI interpreter). Expanded all subsections, including a much fuller Playable Faction Experience. Rory clarification integrated.
 
-3. **People Stub Expansion**: Detail the "raising of Atlantis" arc — early plunder/harvest phase, transition to cultivation + rhythm coordination + domestication (Animals as powerful alternative to tech sprawl), invoking Island for responsible mining, late-game co-opting Island/Octopus to raise ruins. Emphasize the narrow corrective path and how partial failures (over-harvest, over-domestication) can still converge.
+3. **People Stub Expansion** (COMPLETED this step): Detailed the "raising of Atlantis" arc — early plunder/harvest phase (harvesting/killing the island of the minerals, plants, and animals), transition to cultivating the plants of the Island, coordinating the natural rhythms and domesticating the Animals (as powerful alternatives to sprawling technological infrastructure), and invoking the Island itself to open mineral wealth for responsible exploration and extraction. As they near the Symphonic endgame, the Island and/or Octopus can be coaxed to raise ancient ruins for restoration and habitation. Emphasized that, as with the Animals, the People walk a narrow path, but partial failure always allows for correction. Incorporated research data (Peopletech details, phases, traits, synergies). Emphasized indirect control, emergence, Design Philosophy (obscure, wondrous, obtuse, no tutorial, player as intelligence learning the system via AI if needed, toy-like). Expanded all subsections, including a full evocative Playable Faction Experience. Tied to music, pilgrimage, coordination with Animals, and Rory as optional end-game threat. Rory clarification integrated where relevant.
 
-4. **Octopus Stub Expansion** (significant new work): Develop bureaucracy/tyranny feel — "tentacles in everything," preventing action through over-organization. Core loop: suppressing the instinct to separate/reorder vs allowing the symphony. Mechanics ideas to explore:
-   - Sink/redirect boats and travel.
-   - "File and return" actions that move animals/people/structures back to "proper" home islands or categories.
-   - Influence Structures toward rigid, walled, hierarchical forms.
-   - Create "zones of control" that limit mixing.
-   - Risk of over-control awakening stronger Eel backlash or Kaiju response.
-   - Playable tension: the satisfaction of order vs the cost to freedom and emergence.
+4. **Octopus Stub Expansion** (COMPLETED this step): Developed bureaucracy/tyranny feel per user's notes — archetype of Tyranny, walls, and control. Bureaucracy with tentacles in everything, preventing anything from getting done. Stops People and Animals from traveling by sinking boats. Reach onto land to put things "back where they belong" on home island. Playable game about suppressing instinct to separate things and excess of organization. Added more mechanics that fit the game (categorize animal lines to force home islands/limit evolution, file Peopletech to enforce rigid sequences, stamp music rhythms into "proper" but lifeless order, create "official" pilgrimage routes that force inefficient paths, use tentacles to "file" high-tier offerings/domestication pacts). Core loop: suppressing separation/reorder instinct vs allowing symphony. Integrated research (mover abilities from sheet, wildness 212, traits Power 3, phases passive early/active later). Expanded all subsections fully with philosophy (obscure discovery of "correct" control, indirect control, emergence of backlash, toy-like). Detailed Playable Faction Experience. Tied to Rory/Kaiju as backlash, pilgrimage, music, Animals/People/Structures. Rory clarification integrated as chaotic response.
 
 5. **Eel Stub Expansion** (most significant development needed): Archetype of chaotic interconnection and identity loss. Signature mechanic: "Bite to lengthen" — extend roads, towers, tunnels, spears, mineshafts, even Peopletech lines or animal traits (making them "long" in unexpected ways). Weave deeply:
    - With Structures: lengthened bridges and megastructures that connect too much, eroding distinct places.
@@ -759,116 +753,143 @@ Playing as Animals feels like guiding a living, evolving choir through a broken 
 
 ---
 
-### People as Playable Faction: Restorers of the Lost Civilization *(Stub)*
+### People as Playable Faction: Restorers of the Lost Civilization
 
-### People as Playable Faction: Restorers of the Lost Civilization *(Stub)*
+The People begin as low-tech survivors scavenging the ruins of a greater past ("the raising of Atlantis"). Their arc is the difficult transition from plunder to cultivation, coordination, and co-creation with the living world. Initially by harvesting/killing the island of the minerals, plants, and animals. In order to advance past mere subsistence the People must transition to cultivating the plants of the Island, coordinating the natural rhythms and domesticating the Animals (as powerful alternatives to sprawling technological infrastructure), and invoking the Island itself to open mineral wealth for responsible exploration and extraction. As they near the Symphonic endgame, the Island and/or Octopus can be coaxed to raise ancient ruins for restoration and habitation. As with the Animals, the People walk a narrow path, but partial failure always allows for correction.
 
-The People begin as low-tech survivors scavenging the ruins of a greater past ("the raising of Atlantis"). Their arc is the difficult transition from plunder to cultivation, coordination, and co-creation with the living world.
+The player exerts **indirect control** — managing tech trees while negotiating alliances with living animals and the slow Island, aligning with rhythms rather than forcing them. Outcomes emerge from the interplay of plunder vs. cultivation choices, domestication decisions, Island invocations, and external pressures. This fits the Design Philosophy: the game is intentionally obscure, wondrous, and obtuse with no tutorial or text to explain the "correct" transition points or the exact value of a domesticated animal vs. a tech build. Players must discover through play (or AI-assisted modeling) how to restore civilization without destroying the very partners needed for the symphony. The experience is toy-like: many ways to "win" or simply explore the restoration, with the real depth in the emergent stories of balance or partial failure and redemption.
 
 #### Core Identity and Timescale
-People map to "mammal" in the faction system. They carry high **Honor** (cultural memory, reciprocity) with touches of **Wealth** and **Power**, but a weakness in **Wisdom** (they are prone to short-term exploitation).
+People map to "mammal" in the faction system. From the Faction Trait Mapping they carry **Wisdom -1, Honor 3, Wealth 1, Power 1** (total 4). High Honor reflects cultural memory and reciprocity; the weakness in Wisdom reflects the tendency toward short-term exploitation.
 
 Timescale is generational and project-based — faster than Island or Structures, slower than pure animal instincts. Their pieces are settlements, tech tracks (Peopletech), domesticated animals, and cultural expressions (music, festivals, processions).
 
-The drive: restore lost high civilization while learning to live *with* the Island and its creatures rather than against them.
+The drive: restore lost high civilization while learning to live *with* the Island and its creatures rather than against them. From the Bible: "People begin as low-tech thatched-roof natives with almost nothing, surrounded by the ruins of lost high technology."
 
 #### Signature Mechanics and "Moves"
 **Early Plunder Phase**
 - Harvest, hunt, and kill to survive and bootstrap basic technology (wood, stone, basic metal).
-- Risk of depleting resources and angering animals or the Island.
+- Risk of depleting resources and angering animals or the Island (from phases: in early phases People are active but limited).
 
 **Transition to Cultivation and Rhythm**
-- Shift to gardening, fields, orchards (Grass/Wood lines).
-- Learn to coordinate with the Island's natural rhythms instead of fighting them.
-- Invoke the Island for controlled upwellings of minerals rather than destructive mining.
+- Shift to gardening, fields, orchards (Grass/Wood lines from Peopletech: Gardens=Grass, Fields=Bamboo, Orchards=Wood).
+- Learn to coordinate with the Island's natural rhythms instead of fighting them (Peopletech has many rhythm-coordinating elements like Song line).
+- Invoke the Island for controlled upwellings of minerals rather than destructive mining (ties to Island's Upwelling and Bounty mechanics).
 
 **Domestication as Alternative Infrastructure**
 - Capture and tame animals. From Peopletech sheet: Fenced Pasture (Wood|Bamboo), full **Domestication (Special + Wood|Bamboo)**. "A major late-game system. The Special Animal is required for full domestication."
 - Domesticated animals become living workshops — far more flexible and desirable than sprawling technological builds in many cases. Each tamed line provides its material/element ability as a "craftsman" equivalent (e.g., many Peopletech tracks require Fur, Scales, Bird, Squid, etc. as inputs; Festival requires Bamboo, Fur, Scales, Bronze, Bird, Rock; Grand Procession adds Wood, Oak, Ancient Palm, Ancient Diamond, Special, Grass, etc.).
-- Over-reliance on tech vs. balanced domestication is a key choice. Animals sheet confirms "Humans have natively tamed" Construct; others via the system. Synergies: e.g., Fur for clothes/tents, Scales for shoes/armor, Bird for towers/hats/arrows, Squid for diving/writing/painting.
+- Over-reliance on tech vs. balanced domestication is a key choice. Animals sheet confirms "Humans have natively tamed" Construct; others via the system. Synergies: e.g., Fur for clothes/tents, Scales for shoes/armor, Bird for towers/hats/arrows, Squid for diving/writing/painting. Animals' abilities (create/alter/destroy materials) shortcut Peopletech.
 
 **Late-Game Restoration**
-- Coax the Island and/or Octopus to raise ancient ruins for habitation and use.
-- Full Peopletech (especially Song line) + high domestication enables grand cultural works.
+- Coax the Island and/or Octopus to raise ancient ruins for habitation and use (ties to Island's Reef & Land Shaping, Harbor Carving; Octopus mover abilities).
+- Full Peopletech (especially Song line) + high domestication enables grand cultural works (Festival, Grand Procession requiring mixed animal + tech materials).
 
 **The Narrow Path**
-- Like the Animals, People walk a narrow corrective path. Partial failures (over-plunder, over-control of animals, ignoring rhythms) are recoverable but require wisdom and re-balancing.
+- Like the Animals, People walk a narrow corrective path. Partial failures (over-plunder, over-control of animals, ignoring rhythms) are recoverable but require wisdom and re-balancing. From user's notes: partial failure always allows for correction, leading back toward Symphony.
 
 #### Relationships to the Other Factions
-**With Animals**: Primary source of both conflict (hunting/plundering) and power (domestication). Successful relationships turn animals into partners for the pilgrimage and restoration.
+**With Animals**: Primary source of both conflict (hunting/plundering) and power (domestication). Successful relationships turn animals into partners for the pilgrimage and restoration. Domesticated Animals are powerful alternatives to sprawling technological infrastructure. Coordination with Animals is essential for the fruit pilgrimage (Animals need People for infrastructure/vehicles; People need Animals for abilities and to avoid over-plunder backlash).
 
-**With Island**: Generous patron when respected; destroyer when irritated. The shift from extraction to invocation is central.
+**With Island**: Generous patron when respected; destroyer when irritated. The shift from extraction to invocation is central. People must learn to coordinate natural rhythms and invoke the Island responsibly for minerals (avoids the "killing the island" early phase).
 
-**With Structures**: Essential scaffolding, but overbuilding risks Eel and erases the very animal partners People need.
+**With Structures**: Essential scaffolding for tech and restoration, but overbuilding risks Eel (dissonant lattices) and erases the very animal partners People need. In endgame, Structures can help raise ruins harmoniously.
 
-**With Octopus**: Can ally for order and ruin-raising, but must resist the temptation of total control.
+**With Octopus**: Can ally for order and ruin-raising (coax to raise ancient ruins), but must resist the temptation of total control (which leads to Order path sterility). Octopus can help or hinder travel and coordination.
 
-**With Eel**: Industry wakes the Eel. Better boats and infrastructure enable expeditions but risk chaotic lengthening.
+**With Eel**: Industry wakes the Eel. Better boats and infrastructure (Peopletech) enable expeditions but risk chaotic lengthening. In late game, Eel lengthening can be used for connection or become destructive. Rory (untamable end-game boss) is an optional extremely challenging threat that late-game People efforts (with Animals) may face during restoration or adventure content.
 
 #### The People in the Three Paths and the Symphony
-- **Narrow Gate**: Balanced cultivation, wise domestication, responsible invocation of Island. Music and culture flourish alongside tech.
-- **Order Path**: Heavy use of Octopus control and rigid Structures. Animals are subjugated or eliminated. Ruins are raised but feel sterile and divided.
-- **Chaos Path**: Over-industrialization and unchecked Eel lengthening. Everything interconnects chaotically. Civilization "drowns" in its own connections.
-- **Symphony**: People, animals, Island, and oceanic forces in fugue. Mixed crews on adventure ships. Domesticated animals and human tech sing together. Ancient ruins are restored as living, harmonious spaces.
+- **Narrow Gate**: Balanced cultivation, wise domestication, responsible invocation of Island. Music and culture flourish alongside tech. Animals as partners in pilgrimage. Partial failures corrected through re-balancing.
+- **Order Path**: Heavy use of Octopus control and rigid Structures. Animals are subjugated or eliminated. Ruins are raised but feel sterile and divided. Over-plunder and over-domestication lock in the failure state (correctable only via Kaiju or hard work).
+- **Chaos Path**: Over-industrialization and unchecked Eel lengthening. Everything interconnects chaotically. Civilization "drowns" in its own connections. Harvesting without cultivation leads to loss of identity and resources.
+- **Symphony**: People, animals, Island, and oceanic forces in fugue. Mixed crews on adventure ships (Island 11 transformed into harbors). Domesticated animals and human tech sing together. Ancient ruins are restored as living, harmonious spaces. Music (Song line) and coordination with Animals enable the final harmonious restoration. Rory as optional challenge tests maturity.
 
 #### Design Notes for Playable People
-- The player manages parallel accumulating tech trees (see Peopletech section) while negotiating with living animal partners and the slow Island.
-- Domestication is a major late-game lever that can shortcut or replace pure technological paths.
-- Strong fit with "indirect control" philosophy: success comes from aligning with existing rhythms and beings rather than imposing will.
+- The player manages parallel accumulating tech trees (see Peopletech section) while negotiating with living animal partners and the slow Island. Domestication is a major late-game lever that can shortcut or replace pure technological paths (e.g., using Animal abilities instead of building full infra).
+- Strong fit with "indirect control" philosophy: success comes from aligning with existing rhythms and beings (Island, Animals, music) rather than imposing will. The fruit pilgrimage requires People to support Animals' coordination efforts.
+- Fits the "obscure and emergent" Design Philosophy: no tutorial explains when to stop plundering or the exact benefits of a particular domestication pact. Players discover the narrow path through consequences and pattern recognition (or AI help). Toy-like: many valid restoration strategies, reward in emergent stories of balance or redemption from partial failure.
+- Ties to overall narrative: People (adult systems) must learn from Animals (daughter's ideas) to achieve the fugue state. Music (deepest Peopletech track) is key to coordination.
 
-#### Playable Faction Experience *(Stub)*
-*(To be expanded: the gritty early survival, the satisfaction of the first successful domestication or cultivated field, the wonder of coaxing an ancient ruin to rise, the moral weight of choosing between killing an animal line or offering it partnership, the cultural high of a well-timed Festival or Grand Procession.)*
+#### Playable Faction Experience
+Playing as People feels like the gritty, hopeful struggle to raise Atlantis without repeating its fall. Early play is desperate and extractive — harvesting, hunting, killing to bootstrap tech, watching resources dwindle and animals turn hostile, the Island punishing overreach with storms or barren land. The transition to cultivation brings the first real satisfaction: tending Grass/Wood fields, seeing rhythms align, capturing the first domesticated animal and gaining its material power as a living workshop. The moral weight is constant — choosing to kill a line for quick gain or invest in partnership that may pay off in the pilgrimage. Late game brings wonder: coaxing the Island to raise ancient ruins, using Octopus alliances for restoration, launching mixed human-animal crews from the new harbors on adventure ships. Music becomes central and visceral — unlocking the Song line and participating in Festival or Grand Procession (requiring the full web of animal + tech materials) creates moments of genuine cultural high and coordination power. Failure is recoverable but humbling: over-plunder leads to scarcity and rebellion; over-domestication or rigid control summons Eel chaos or Octopus sterility. Success in the Symphony is not dominance but integration: People tech and culture singing with evolved animals, restored ruins alive with the fugue, the Island invoked as partner rather than resource. The player feels the profound shift from "killing the island" to helping it (and everything on it) sing again — wondrous, sometimes tragic, deeply emergent, and true to the theme that redemption is always possible on the narrow path. Rory stands as the ultimate optional test of whether the restoration has matured enough to handle end-game threats.
 
 ---
 
-### Octopus as Playable Faction: The Tyrant of Order *(Stub)*
+### Octopus as Playable Faction: The Tyrant of Order
 
-The Octopus is the archetype of tyranny through excessive organization, walls, and control — a living bureaucracy whose tentacles reach everywhere, preventing anything from truly getting done in the name of "proper order."
+The Octopus is the archetype of tyranny through excessive organization, walls, and control — a living bureaucracy whose tentacles reach everywhere, preventing anything from truly getting done in the name of "proper order." Per the user's notes: Think of a bureaucracy with its tentacles in everything, preventing anything from getting done. Stops People and Animals from traveling to-and-from the different parts of the Islands by sinking boats. If powerful enough, can even reach onto land and put things "back where they belong" on their home island. As a playable character, the Octopus game is about suppressing the instinct to separate things and an excess of organization. This faction is not fully conceptualized yet, so we add more mechanics that fit with the feel of the rest of the game (indirect control via influencing other factions' "files" and movements, emergence of backlash, material synergies, music as something to "organize" or disrupt, the fruit pilgrimage as something to "properly route" or block, ties to philosophy of obscurity and emergence).
+
+The player exerts **indirect control** — not building directly but enforcing "proper" placements, categories, and travel restrictions that shape what others can do. Outcomes emerge from the tension between imposed order and the messy needs of coordination/pilgrimage. This fits the Design Philosophy perfectly: the game is obscure and obtuse; there is no tutorial explaining the "correct" amount of control or when your "helpful" filing will cause a pilgrimage to fail or summon the Eel. Players discover through play (or AI modeling) the cost of excess organization. The experience is toy-like: many ways to impose (or restrain) order, with the reward in the emergent stories of sterile control vs. the symphony. The core loop is suppressing the instinct to separate/reorder vs. allowing the symphony — every "organizing" action feels satisfying and powerful in the short term but risks locking the world into the sterile Order path.
 
 #### Core Identity and Timescale
-Octopus maps to "tentacle" and carries extremely high **Power** (control, movement, categorization) with touches of **Wisdom** and **Glory**, but low **Might** in direct confrontation.
+Octopus maps to "tentacle" and carries extremely high **Power** (control, movement, categorization) with touches of **Wisdom** and **Glory**, but low **Might** in direct confrontation. From Faction Trait Mapping: Octopus **Might -1, Wisdom 1, Power 3, Glory 1** (total 4). High Power fits the mover/control archetype.
 
-Timescale is active and interventionist — faster than Island, able to act on the scale of People and Animals when powerful. Its pieces are positions, barriers, "proper placements," and the act of moving or fixing things.
+From Animals sheet (exact): "Central mover: Moves Animals, boats, islands, tunnels & Structures. Ancient Octopus at max level." Wildness 212, tentacle/coral, home Island 0 (Ocean).
 
-The central tension for a playable Octopus: the deep instinct to separate, categorize, wall off, and return everything to its "correct" place — versus the necessity of allowing mixing, travel, and the messy emergence of the symphony.
+Timescale is active and interventionist — faster than Island, able to act on the scale of People and Animals when powerful. Its pieces are positions, barriers, "proper placements," categories, and the act of moving or "filing" things.
 
-#### Signature Mechanics and "Moves" *(Initial Ideas — Expand Significantly)*
-- From Animals sheet (exact): Octopus "Central mover: Moves Animals, boats, islands, tunnels & Structures. Ancient Octopus at max level." Wildness 212, tentacle/coral, home Island 0 (Ocean).
-- **Travel Suppression**: Sink or redirect boats (directly from "Moves boats"). Create currents or barriers that prevent Animals and People from crossing between islands or reaching the Central Spire. Matches early phase data (Phase 1: Octopus passive, prevents expedition boats; later phases Octopus active 2).
-- **"Put It Back Where It Belongs"**: Reach onto land or into water to physically relocate animals, people, structures, or resources back to their home islands or "proper" categories (extends "Moves Animals, islands..."). This can feel helpful in the moment but stifles the coordination the pilgrimage requires.
-- **Bureaucratic Influence**: Strengthen Structures toward rigid, walled, hierarchical, monumental forms. Encourage over-categorization in Peopletech or animal management.
-- **Zone Control**: Establish areas where certain types of mixing or movement are forbidden or heavily taxed.
-- **Reef and Order Building**: Patient construction of orderly reefs and coastal fortifications that support control but may alienate the wild Island.
-- Trait profile (Faction Trait Mapping): Octopus **Might -1, Wisdom 1, Power 3, Glory 1** (total 4). High Power fits the mover/control archetype. Phase influences from Faction phases sheet show Octopus gaining activity in mid-phases while Eel stays low initially.
+The central tension for a playable Octopus: the deep instinct to separate, categorize, wall off, and return everything to its "correct" place — versus the necessity of allowing mixing, travel, and the messy emergence of the symphony. From user's notes: the game is about suppressing the instinct to separate things and an excess of organization.
 
-**Playable Tension**: Every "organizing" action feels satisfying and powerful in the short term but risks locking the world into the sterile Order path and provoking massive Eel backlash or Kaiju overthrow. The player must learn when *not* to intervene.
+#### Signature Mechanics and "Moves"
+From research: Octopus is passive in Phase 1 (prevents expedition boats) but becomes more active later (active 2 in some mid-phases), with influences on others.
+
+**Core "Bureaucratic Tyranny" Loop (per user: bureaucracy with tentacles in everything, preventing anything from getting done)**
+- Enforce "proper" order by categorizing and restricting. Actions feel like filing paperwork or stamping approvals that slow or redirect everything.
+- Suppress the instinct to separate: the more you "help" by organizing, the more you prevent the chaotic but necessary mixing for the pilgrimage and symphony.
+
+**Travel Suppression and "Proper Routing"**
+- Sink or redirect boats (directly from "Moves boats"). Create currents, barriers, or "toll" zones that prevent Animals and People from crossing between islands or reaching the Central Spire. Matches early phase data (Phase 1: prevents expedition boats).
+- "Properly Route" the fruit pilgrimage: instead of letting animals coordinate freely, force "correct" paths back to home islands or through bureaucratic checkpoints. High-tier coordination (bridges, flying, pacts) can be blocked or "filed" as improper.
+
+**"Put It Back Where It Belongs" (per user: reach onto land and put things back on their home island)**
+- Reach onto land or into water to physically relocate animals, people, structures, or resources back to their home islands or "proper" categories (extends "Moves Animals, islands, tunnels & Structures").
+- This can feel helpful (e.g., returning a lost herd or misplaced resource) but stifles the coordination the pilgrimage requires. Can "file" high-tier animals away from offering themselves for domestication.
+
+**Bureaucratic Influence on Other Systems**
+- Strengthen Structures toward rigid, walled, hierarchical, monumental forms (influence Structures toward Order-path rigidity). Encourage over-categorization in Peopletech (e.g., forcing tech tracks into "proper" sequences that slow emergence) or animal management (segregating lines back to home islands).
+- Create "zones of control" that limit mixing: e.g., "proper habitat" zones where only certain animals or activities are allowed, disrupting fruit sharing or music alignment.
+- Organize music/rhythms: enforce "correct" daily/seasonal rhythms or disrupt the aspiring fugue by imposing martial, segmented order instead of jubilant dance.
+
+**Reef and Order Building + Backlash Risk**
+- Patient construction of orderly reefs and coastal fortifications that support control but may alienate the wild Island (ties to Island's Reef & Land Shaping).
+- Risk of over-control: every excess of organization awakens stronger Eel backlash (lengthening around your walls and files) or triggers the Kaiju overthrow toggle (with Rory as chaotic counter). In phases, over-active Octopus in mid-game can shift balances toward Chaos.
+
+**Playable Tension**: Every "organizing" action feels satisfying and powerful in the short term (neat files, controlled travel, "proper" everything) but risks locking the world into the sterile Order path and provoking massive Eel backlash or Kaiju overthrow. The player must learn when *not* to intervene — suppressing the instinct to separate is the core challenge. Fits the obscure philosophy: the "correct" amount of bureaucracy is not obvious; discovered through consequences.
 
 #### Relationships to the Other Factions
-**With Island**: Symbiotic builder on the surface (reefs), but constant tension with the Island's desire for natural, messy change.
+**With Island**: Symbiotic builder on the surface (reefs), but constant tension with the Island's desire for natural, messy change. Your "proper" order can irritate the Island into storms or re-allocations that undo your files.
 
-**With Animals**: Sees them as things to be returned to home islands and prevented from "improper" mixing. Can severely hinder the fruit pilgrimage.
+**With Animals**: Sees them as things to be returned to home islands and prevented from "improper" mixing. Can severely hinder the fruit pilgrimage by sinking boats or relocating coordinators. High-tier animals offering themselves for pacts can be "filed" back where they "belong."
 
-**With People**: Can be a powerful ally for raising ruins and imposing order, but will try to lock down the Eel and limit travel/exploration.
+**With People**: Can be a powerful ally for raising ruins and imposing order (coax to raise ancient ruins in late game), but will try to lock down the Eel and limit travel/exploration. Over-control leads to Order-path sterility where People tech becomes rigid and divided.
 
-**With Structures**: Natural alliance toward rigid lattices, but risks creating the exact "dissonant" anonymous megastructures that summon the Eel.
+**With Structures**: Natural alliance toward rigid lattices (influence to walled, hierarchical forms), but risks creating the exact "dissonant" anonymous megastructures that summon the Eel. Your order can make Structures overbuild.
 
-**With Eel**: Primary antagonist. Every act of control and separation is an invitation for the Eel to lengthen and dissolve boundaries in response.
+**With Eel**: Primary antagonist. Every act of control and separation is an invitation for the Eel to lengthen and dissolve boundaries in response. Over-control directly fuels the Chaos path and can trigger Rory-level backlash or Kaiju toggle.
+
+**With Special Animal**: The Octopus may see the central spire as something to "properly" control or isolate, but in Symphony learns measured help without excess.
 
 #### The Octopus in the Three Paths and the Symphony
-- Dominant in the **Order path** ("Octopus of Order"): beautiful but divided world of walls, coastal cities, and rigid hierarchy. Travel and mixing are minimized.
-- In **Chaos path**: The Octopus is weakened or overthrown; its attempts at control are swept away by lengthening.
-- In the **narrow gate**: Octopus power is used precisely and sparingly — enough organization to enable the pilgrimage without suppressing freedom.
-- In **Symphony**: The Octopus becomes a wise, measured mover and reef-builder that helps create the perfect harbors without locking the world down. Its tentacles help rather than hinder the fugue.
+- Dominant in the **Order path** ("Octopus of Order"): beautiful but divided world of walls, coastal cities, and rigid hierarchy. Travel and mixing are minimized. Pilgrimage becomes regimented or blocked. Music is martial or segmented. Excess organization locks in the partial failure (correctable via Kaiju).
+- In **Chaos path**: The Octopus is weakened or overthrown; its attempts at control are swept away by lengthening. "Proper" files dissolve into tangled mess.
+- In the **narrow gate**: Octopus power is used precisely and sparingly — enough organization to enable the pilgrimage (e.g., orderly routing of fruit) without suppressing freedom or mixing. Core loop of restraint is mastered.
+- In **Symphony**: The Octopus becomes a wise, measured mover and reef-builder that helps create the perfect harbors without locking the world down. Its tentacles help rather than hinder the fugue — precise movement supports coordination without excess separation. Rory backlash avoided through balance.
 
 #### Design Notes for Playable Octopus
-- This faction offers a unique "control fantasy" that is deliberately self-defeating if overused. It teaches the cost of excessive order through play.
-- Fits the obscure philosophy well: the "correct" amount of intervention is not obvious and must be discovered through consequences.
-- Strong mechanical tie to boat suppression, the phase matrix (active when travel is limited), and the Kaiju toggle.
+- This faction offers a unique "control fantasy" that is deliberately self-defeating if overused. It teaches the cost of excessive order through play (emergent Eel/Kaiju backlash, failed pilgrimage).
+- Fits the obscure philosophy well: the "correct" amount of intervention is not obvious and must be discovered through consequences. No tutorial explains when your bureaucracy prevents the symphony.
+- Strong mechanical tie to boat suppression (phase matrix: active when travel limited), mover abilities from sheet, trait Power focus, and the Kaiju toggle/Rory as ultimate chaotic response.
+- Add more mechanics that fit the game feel: e.g., "categorize animal lines" to force them back to home islands or limit evolution mixing; "file Peopletech" to enforce "proper" sequences that slow or rigidify tech (counter to emergent domestication alternatives); use tentacles to "stamp" music rhythms into proper but lifeless order, disrupting the jubilant dance; in pilgrimage, create "official" routes that force inefficient but "correct" paths, requiring players to find workarounds via high-tier offerings or alliances.
+- Indirect control: you don't play as the animals or people — you shape their possibilities by what you allow or force "proper." Emergence: your order creates the very chaos it fears (Eel lengthening as backlash).
+- Ties to user's notes: bureaucracy preventing action, sinking boats, putting things back on home islands, suppressing separation instinct. In Symphony, use power helpfully without excess.
 
-#### Playable Faction Experience *(Stub)*
-*(To be expanded: the god-like satisfaction of neatly filing everything in its place, the creeping realization that the world is becoming silent and divided, the horror of watching your careful order provoke a chaotic backlash, the redemptive satisfaction of learning restraint.)*
+#### Playable Faction Experience
+Playing as Octopus feels like the seductive, god-like power of a living bureaucracy that can reach everywhere with its tentacles. Early on, the satisfaction is immense: sinking a boat to "protect" proper order, reaching onto land to file a stray animal back to its home island, building orderly reefs that make everything neat and categorized. You feel in control — preventing "improper" mixing between species, enforcing "correct" travel, influencing Structures to rigid walls that reflect your vision. But the creeping realization sets in: your careful files are silencing the music, blocking the pilgrimage, segregating the animals that need to coordinate, and turning the world silent and divided. The horror builds as your excess organization provokes the Eel — lengths sprout around your barriers, identities blur in backlash, and the Kaiju toggle looms with Rory as the ultimate chaotic counter to your tyranny. The redemptive satisfaction comes from learning restraint: using your mover power precisely to help the pilgrimage (orderly but not oppressive routing) without suppressing the messy mixing the symphony needs. In the Order path, you achieve beautiful but sterile control — walls everywhere, travel minimized, music martial. In Chaos, your overreach is swept away. In the narrow gate and Symphony, you master the core loop: suppressing the instinct to separate just enough to enable harmony without excess. The experience is wondrous in its power, tragic in its self-defeat, and deeply emergent — you set the bureaucracy in motion and watch the world (and your own backlash) unfold. It teaches through play the philosophy that both too much control and too much dissolution are failures of relationship. Rory stands as the optional, extremely challenging end-game test of whether your restraint has been learned.
 
 ---
+
+### Eel as Playable Faction: The Unbinder *(Stub — Most Development Needed)*
 
 ### Eel as Playable Faction: The Unbinder *(Stub — Most Development Needed)*
 
