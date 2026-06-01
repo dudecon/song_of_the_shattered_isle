@@ -427,11 +427,11 @@ The spreadsheet remains the best place to see the exact formulas and cross-track
 Six primary actors interact across phases. All are intended to eventually be playable, each operating on its own natural timescale (from the Island's geological epochs to the faster generational and cultural rhythms of the others):
 
 1. **Island** — the geological ground bass and world-shaper (detailed below)
-2. **Animals**
-3. **People**
+2. **Animals** — the evolutionary choir; population, fruit, coordination, and music (stub below)
+3. **People** — restorers of civilization through cultivation, domestication, and invocation (stub below)
 4. **Structures** — the rhythm and scaffolding of the built world; essential yet dangerous when they erase identity (detailed below)
-5. **Octopus**
-6. **Eel**
+5. **Octopus** — archetype of tyranny, walls, and excessive control (stub below)
+6. **Eel** — archetype of loss of identity through chaotic interconnection and lengthening (stub below)
 
 Each phase defines whether an actor is **Active**, has a **Lower/Upper Range**, and specific influence values on other actors (positive, negative, or special tokens like "s" for self?).
 
@@ -626,6 +626,291 @@ So no — the Structures faction does **not** play as the flora. The flora *are*
 This parallel is one of the quiet strengths of the design. It means that even "resources" like wood and grass have personality, agency, and factional allegiance. When you harvest or build with them, you are negotiating with another faction's "structures" — not just chopping down anonymous trees. That single shift does enormous work for the game's thematic coherence and the feeling that everything is alive and singing in (or against) the symphony.
 
 \---
+
+### Development Plan for Playable Faction Parity (Stub Phase)
+
+**Goal:** Bring Animals, People, Octopus, and Eel up to the same depth and quality as the Island and Structures playable faction sections (Core Identity & Timescale, Signature Mechanics & Moves, Relationships to Other Factions, Role in the Three Paths & Symphony, Design Notes for Playable Faction, Playable Faction Experience).
+
+**Current Status (Stubs):** The content below is initial stub material based on the latest design notes. Full expansions will follow this phased plan:
+
+**Research & Cross-Reference Pass (COMPLETED in this step):** 
+- Pulled from .xlsx via pandas: full Animals sheet (wildness scores e.g. Stove 447, Eel 335, Octopus 212, Rory 547; exact fruit evolution columns 0-4; Octopus "Central mover: Moves Animals, boats, islands, tunnels & Structures"; Eel "bites things and makes them *long*", "People's industry wakes it"; faction mapping; home islands cross-checked with Islands sheet).
+- Peopletech full: exact Domestication (Special + Wood|Bamboo), Fenced Pasture (Wood|Bamboo), all material synergies (Fur, Scales, Bird, Squid etc.), Festival (Bamboo, Fur, Scales, Bronze, Bird, Rock), Grand Procession (almost all including Special/Ancient).
+- Faction phases matrix: Phase 1 (Animal Rage) Animals active (2), Octopus 1 (passive, prevents boats), Eel 0 (dormant); mid-phases Octopus ramps to 2, Eel to 1; influences detailed (e.g., Animals +2 to Octopus in P1).
+- Faction Trait Mapping: exact Animals (Might 1/Wisdom 3/Honor -1/Power 1), People (Wisdom -1/Honor 3/Wealth 1/Power 1), Octopus (Might -1/Wisdom 1/Power 3/Glory 1), Eel (Wisdom 1/Honor 1/Wealth -1/Glory 3).
+- Trait Arbitration rules confirmed (past/present/future, multi-round a/b/c/d voting).
+- Notes sheet: biology grounding (Grass "makes things grow faster, has to stay wet"; Eel "last of its kind... industry wakes it"; Squid "loves decorations and color"; Special "protects... Friends with the Eel and Squid and Octopus").
+- Re-read Bible: Animals roster (matches sheet + evolution rule quote), Three Paths (Octopus "rigid order", Eel "long tangled", Kaiju toggle, musical fugue), Phases table (matches matrix), Peopletech domestication section, new Philosophy section (obscurity, toy-like, indirect control, emergence).
+- Incorporated into stubs below: exact numbers, quotes, synergies, phase states, abilities. User's new mechanics (pop 6-12, fruit pilgrimage, music rhythm, "make long", bureaucracy) aligned with underlying data (fruit per animal, home islands, Special center, Peopletech reqs, "bites... long", mover abilities).
+
+1. **Research & Cross-Reference Pass** (COMPLETED): [details above]. Next: expand stubs per order.
+
+2. **Animals Stub Expansion**: Flesh out population thresholds (6-12), fruit securing/guarding vs Island re-allocation, element/material creation/alter/destroy abilities per animal line, taming mechanics and benefits (as "trained workers"), coordination requirements for fruit pilgrimage to Special Animal (bridges, air lifts, vehicles, self-offering/domestication pacts), and music as the universal coordinating language (daily/seasonal/epochal rhythms building to fugue dance). Emphasize indirect control and emergence per the Design Philosophy.
+
+3. **People Stub Expansion**: Detail the "raising of Atlantis" arc — early plunder/harvest phase, transition to cultivation + rhythm coordination + domestication (Animals as powerful alternative to tech sprawl), invoking Island for responsible mining, late-game co-opting Island/Octopus to raise ruins. Emphasize the narrow corrective path and how partial failures (over-harvest, over-domestication) can still converge.
+
+4. **Octopus Stub Expansion** (significant new work): Develop bureaucracy/tyranny feel — "tentacles in everything," preventing action through over-organization. Core loop: suppressing the instinct to separate/reorder vs allowing the symphony. Mechanics ideas to explore:
+   - Sink/redirect boats and travel.
+   - "File and return" actions that move animals/people/structures back to "proper" home islands or categories.
+   - Influence Structures toward rigid, walled, hierarchical forms.
+   - Create "zones of control" that limit mixing.
+   - Risk of over-control awakening stronger Eel backlash or Kaiju response.
+   - Playable tension: the satisfaction of order vs the cost to freedom and emergence.
+
+5. **Eel Stub Expansion** (most significant development needed): Archetype of chaotic interconnection and identity loss. Signature mechanic: "Bite to lengthen" — extend roads, towers, tunnels, spears, mineshafts, even Peopletech lines or animal traits (making them "long" in unexpected ways). Weave deeply:
+   - With Structures: lengthened bridges and megastructures that connect too much, eroding distinct places.
+   - With Peopletech: accelerated but distorted tech progress (e.g., a lengthened instrument family creates wild new harmonies or dissonances).
+   - With Animals: lengthened migrations or abilities that blur species lines.
+   - With Island: lengthened geological processes (slow upwellings become sudden floods, or vice versa).
+   - With Music: distorting rhythms into tangled, beautiful, or nightmarish counterpoint.
+   - Playable experience: temptation of easy connection and power vs the horror of everything bleeding together. Strong ties to "Eel Unbound" Chaos path and the Kaiju toggle (Rory connection?).
+   - Design notes on how "lengthening" can be used redemptively in the Symphony state (purposeful, harmonious elongation rather than dissolution).
+
+6. **Integration & Polish Pass**: Ensure all four reference the Design Philosophy (obscure/emergent/indirect control/toy-like, no-tutorial, AI-as-oracle player model). Cross-link to Three Paths, trait profiles, music coordination, fruit system, and each other. Add path-specific expressions (Order/Chaos/Symphony) and dramatic arcs. Match the poetic, musical voice of the Island/Structures sections.
+
+7. **Validation**: Cross-check against spreadsheet matrices and the user's original diagram/notes for fidelity. Update any related sections (e.g., Three Paths, Animals roster).
+
+Stubs below are functional placeholders. They contain the latest provided gameplay descriptions and initial structure. Expand in the order above rather than polishing one fully before moving on.
+
+---
+
+### Animals as Playable Faction: The Evolutionary Choir *(Stub)*
+
+The Animals faction represents the living, growing, instinctual voice of the world — the choir that must learn to sing together. Gameplay centers on securing resources to grow populations, unlocking evolutions, and ultimately coordinating a pilgrimage of fruit offerings to the Special Animal at the Central Spire. Success requires both competition with People and cooperation across species, often through music and temporary domestication pacts.
+
+#### Core Identity and Timescale
+Animals map to "dino" (including the plant-like Grass and Wood) in the faction system. From the Faction Trait Mapping they carry **Might 1, Wisdom 3, Honor -1, Power 1** (total 4). High Wisdom reflects pattern recognition and adaptation; the weakness in Honor reflects their initially wild, self-interested nature until coordinated through music and pilgrimage.
+
+Native Wildness scores (from Animals sheet) determine domestication difficulty (wildness × individual level): e.g., Stove 447 (extremely high), Eel 335, Rory 547, Octopus 212, Dragon not-tamable (kill for fruit), many others 0-13. 
+
+Natural timescale is generational and seasonal — herds grow, evolve, and migrate on the scale of years to decades, faster than Island geology but slower than individual human decisions. Their "pieces" are populations, fruit sources, migration routes, and evolving abilities tied to materials/elements.
+
+**Core Evolution Rule (exact from spreadsheet and Bible):** Animals eat lvl-1, create lvl+1 product (with lvl as ~10× byproduct). lvl+1 and up are impassable. Shapes lvl and lvl-1. Sinks/passes through lvl-2 on contact. Excludes lvl-3 and lower in increasing radius. Evolution paths are 0-4/5 with signature fruits (detailed in the full roster table in section 5 and the Animals sheet fruit columns).
+
+The central drive: reach and protect the Special Animal while expanding their own kind. Everything starts scattered and angry ("Animal Rage"). The goal is not domination but contributing their unique voice (and fruit) to the greater fugue.
+
+#### Signature Mechanics and "Moves"
+**Population & Evolution Loop**
+- Secure and defend food/fruit sources against People plundering and the fickle Island re-allocating land.
+- When a population of a species reaches a critical threshold (roughly 6-12 individuals), the next evolutionary stage becomes available.
+- Upgrade process repeats. Higher tiers unlock stronger material/element abilities and coordination options.
+
+**Material/Element Abilities**
+- Each animal line is tied to an element or material they can create, alter, or destroy (e.g., Grass makes grass grow faster; other examples from roster and flora: Scales for armor-like hardening, Fur for insulation/softening, Wood for building/breaking, Song Bird for musical resonance, etc.).
+- Untamed, these are wild, instinctual effects.
+- When domesticated/tamed by People, they function as trained workers or craftsmen with tools and a workshop — extremely desirable "living technology."
+
+**Guarding vs. Being Hunted**
+- Animals guard their fruit and home islands.
+- People may attempt capture for domestication or simply kill for immediate resources. This creates a constant tension between wild autonomy and negotiated partnership.
+
+**The Fruit Pilgrimage to the Special Animal**
+- All animals must eventually deliver their signature fruits (at appropriate tiers) to the Special Animal in the Central Spire (Island 8). The Special Animal (wildness 55, archaic living fossil/fire, rainbow/gold/silver) is unique: "Only protects the other animals, doesn't build anything. Friends with the Eel and Squid and Octopus." It helps upgrades.
+- Specific fruits from Animals sheet (examples): Cleanerbird "acorn black dragon scale fruit", Wood "apple-pear (irridescent)", Dragon "Black-Dragonscale", Fur "hairy-peach", many others like Furry-Acorn (Finder/Core), Icicle Carrot (Frost), Lava Orange (Stove), etc. Full table in Animals sheet columns 4+ and section 5 roster.
+- This requires inter-species coordination:
+  - Constructing bridges, roads, stairs (often with Wood/Grass or Structures help; Peopletech has Path/Bridge/Sky Causeway using Bird/Grass/Wood/fur/Stone/Scales).
+  - Vehicles or transport (Peopletech boats, Construct for animation).
+  - Flying animals carrying fruit (Wind Bird, Dragon).
+  - High-tier animals offering themselves and their services (including temporary or permanent domestication pacts with People or other animals).
+- Failure to coordinate dooms the restoration. Home islands (from Islands sheet and roster) must be left for the central goal: e.g., 13 Thornbush (Dragon/Cleanerbird), 2 Peaks (Frost/Fur), 9 Deepest Place (Eel/Rory), etc. Island 11/12 become adventure ports/islands in endgame.
+
+**Music as Coordinating Force**
+- Music is the universal language and rhythm-keeper.
+- The rhythm of every day, week, season, and epoch aspires to become a single coherent, jubilant dance/fugue.
+- Higher-tier Song Birds, instruments from Peopletech, and collective actions can align or disrupt these rhythms, affecting coordination, morale, and even Island/Octopus/Eel states.
+
+#### Relationships to the Other Factions
+**With People**: Symbiotic but fraught. Domestication turns animals into powerful alternatives to industrial infrastructure. Over-hunting or poor treatment can drive species to extinction or rebellion. Successful pacts allow Animals to "lend" their abilities for the greater restoration.
+
+**With Island**: The Island provides habitat but can capriciously re-allocate land or trigger storms that destroy populations and fruit sources. Animals must learn the Island's slow rhythms.
+
+**With Structures**: Wild flora (Grass/Wood) are the Animals' own "living structures." Built Structures can support or pave over animal habitats. Construct animals bridge the two.
+
+**With Octopus**: The Octopus may try to "return" animals to their "proper" home islands, disrupting coordinated efforts. Over-control suppresses the wild mixing needed for pilgrimage.
+
+**With Eel**: Lengthening can distort migrations or abilities in useful or disastrous ways. The Eel is both a danger and a potential strange ally for "long" connections across the shattered isles.
+
+**With Special Animal**: The ultimate focal point. All paths lead here.
+
+#### The Animals in the Three Paths and the Symphony
+- **Narrow Gate**: Coordinated, multi-species fruit deliveries with minimal loss. Music aligns everything. Temporary domestication is used wisely and reciprocally.
+- **Order Path (Octopus dominant)**: Animals are segregated to home islands, heavily "managed" or culled. Pilgrimage becomes regimented and incomplete. Music is martial or silenced.
+- **Chaos Path (Eel dominant)**: Populations mix chaotically through lengthening. Fruit is delivered but identities blur. Music becomes wild, tangled, ecstatic or cacophonous.
+- **Symphony**: Every species contributes its evolved voice and fruit. Domesticated animals work alongside wild ones in harmonious partnership. The pilgrimage becomes a grand, rhythmic procession. The choir sings as one while remaining distinct.
+
+#### Design Notes for Playable Animals
+- The player does not control individual animals directly but influences populations, defends fruit sources, directs evolution priorities, and brokers coordination pacts.
+- This faction rewards patient observation of rhythms (seasonal, musical, migratory) and clever inter-species alliances.
+- Fits the "obscure and emergent" philosophy: the full coordination puzzle is not explained; players discover it through play and pattern recognition (or AI-assisted analysis).
+- Strong "toy" quality — many ways to "win" or simply explore the evolutionary symphony.
+
+#### Playable Faction Experience *(Stub)*
+*(To be expanded: the feeling of guiding herds, the tension of defending vs. sacrificing for the greater good, the joy of hearing disparate rhythms lock into a single dance, the sorrow of a line going extinct, the wonder of a high-tier animal choosing to offer itself for the pilgrimage.)*
+
+---
+
+### People as Playable Faction: Restorers of the Lost Civilization *(Stub)*
+
+The People begin as low-tech survivors scavenging the ruins of a greater past ("the raising of Atlantis"). Their arc is the difficult transition from plunder to cultivation, coordination, and co-creation with the living world.
+
+#### Core Identity and Timescale
+People map to "mammal" in the faction system. They carry high **Honor** (cultural memory, reciprocity) with touches of **Wealth** and **Power**, but a weakness in **Wisdom** (they are prone to short-term exploitation).
+
+Timescale is generational and project-based — faster than Island or Structures, slower than pure animal instincts. Their pieces are settlements, tech tracks (Peopletech), domesticated animals, and cultural expressions (music, festivals, processions).
+
+The drive: restore lost high civilization while learning to live *with* the Island and its creatures rather than against them.
+
+#### Signature Mechanics and "Moves"
+**Early Plunder Phase**
+- Harvest, hunt, and kill to survive and bootstrap basic technology (wood, stone, basic metal).
+- Risk of depleting resources and angering animals or the Island.
+
+**Transition to Cultivation and Rhythm**
+- Shift to gardening, fields, orchards (Grass/Wood lines).
+- Learn to coordinate with the Island's natural rhythms instead of fighting them.
+- Invoke the Island for controlled upwellings of minerals rather than destructive mining.
+
+**Domestication as Alternative Infrastructure**
+- Capture and tame animals. From Peopletech sheet: Fenced Pasture (Wood|Bamboo), full **Domestication (Special + Wood|Bamboo)**. "A major late-game system. The Special Animal is required for full domestication."
+- Domesticated animals become living workshops — far more flexible and desirable than sprawling technological builds in many cases. Each tamed line provides its material/element ability as a "craftsman" equivalent (e.g., many Peopletech tracks require Fur, Scales, Bird, Squid, etc. as inputs; Festival requires Bamboo, Fur, Scales, Bronze, Bird, Rock; Grand Procession adds Wood, Oak, Ancient Palm, Ancient Diamond, Special, Grass, etc.).
+- Over-reliance on tech vs. balanced domestication is a key choice. Animals sheet confirms "Humans have natively tamed" Construct; others via the system. Synergies: e.g., Fur for clothes/tents, Scales for shoes/armor, Bird for towers/hats/arrows, Squid for diving/writing/painting.
+
+**Late-Game Restoration**
+- Coax the Island and/or Octopus to raise ancient ruins for habitation and use.
+- Full Peopletech (especially Song line) + high domestication enables grand cultural works.
+
+**The Narrow Path**
+- Like the Animals, People walk a narrow corrective path. Partial failures (over-plunder, over-control of animals, ignoring rhythms) are recoverable but require wisdom and re-balancing.
+
+#### Relationships to the Other Factions
+**With Animals**: Primary source of both conflict (hunting/plundering) and power (domestication). Successful relationships turn animals into partners for the pilgrimage and restoration.
+
+**With Island**: Generous patron when respected; destroyer when irritated. The shift from extraction to invocation is central.
+
+**With Structures**: Essential scaffolding, but overbuilding risks Eel and erases the very animal partners People need.
+
+**With Octopus**: Can ally for order and ruin-raising, but must resist the temptation of total control.
+
+**With Eel**: Industry wakes the Eel. Better boats and infrastructure enable expeditions but risk chaotic lengthening.
+
+#### The People in the Three Paths and the Symphony
+- **Narrow Gate**: Balanced cultivation, wise domestication, responsible invocation of Island. Music and culture flourish alongside tech.
+- **Order Path**: Heavy use of Octopus control and rigid Structures. Animals are subjugated or eliminated. Ruins are raised but feel sterile and divided.
+- **Chaos Path**: Over-industrialization and unchecked Eel lengthening. Everything interconnects chaotically. Civilization "drowns" in its own connections.
+- **Symphony**: People, animals, Island, and oceanic forces in fugue. Mixed crews on adventure ships. Domesticated animals and human tech sing together. Ancient ruins are restored as living, harmonious spaces.
+
+#### Design Notes for Playable People
+- The player manages parallel accumulating tech trees (see Peopletech section) while negotiating with living animal partners and the slow Island.
+- Domestication is a major late-game lever that can shortcut or replace pure technological paths.
+- Strong fit with "indirect control" philosophy: success comes from aligning with existing rhythms and beings rather than imposing will.
+
+#### Playable Faction Experience *(Stub)*
+*(To be expanded: the gritty early survival, the satisfaction of the first successful domestication or cultivated field, the wonder of coaxing an ancient ruin to rise, the moral weight of choosing between killing an animal line or offering it partnership, the cultural high of a well-timed Festival or Grand Procession.)*
+
+---
+
+### Octopus as Playable Faction: The Tyrant of Order *(Stub)*
+
+The Octopus is the archetype of tyranny through excessive organization, walls, and control — a living bureaucracy whose tentacles reach everywhere, preventing anything from truly getting done in the name of "proper order."
+
+#### Core Identity and Timescale
+Octopus maps to "tentacle" and carries extremely high **Power** (control, movement, categorization) with touches of **Wisdom** and **Glory**, but low **Might** in direct confrontation.
+
+Timescale is active and interventionist — faster than Island, able to act on the scale of People and Animals when powerful. Its pieces are positions, barriers, "proper placements," and the act of moving or fixing things.
+
+The central tension for a playable Octopus: the deep instinct to separate, categorize, wall off, and return everything to its "correct" place — versus the necessity of allowing mixing, travel, and the messy emergence of the symphony.
+
+#### Signature Mechanics and "Moves" *(Initial Ideas — Expand Significantly)*
+- From Animals sheet (exact): Octopus "Central mover: Moves Animals, boats, islands, tunnels & Structures. Ancient Octopus at max level." Wildness 212, tentacle/coral, home Island 0 (Ocean).
+- **Travel Suppression**: Sink or redirect boats (directly from "Moves boats"). Create currents or barriers that prevent Animals and People from crossing between islands or reaching the Central Spire. Matches early phase data (Phase 1: Octopus passive, prevents expedition boats; later phases Octopus active 2).
+- **"Put It Back Where It Belongs"**: Reach onto land or into water to physically relocate animals, people, structures, or resources back to their home islands or "proper" categories (extends "Moves Animals, islands..."). This can feel helpful in the moment but stifles the coordination the pilgrimage requires.
+- **Bureaucratic Influence**: Strengthen Structures toward rigid, walled, hierarchical, monumental forms. Encourage over-categorization in Peopletech or animal management.
+- **Zone Control**: Establish areas where certain types of mixing or movement are forbidden or heavily taxed.
+- **Reef and Order Building**: Patient construction of orderly reefs and coastal fortifications that support control but may alienate the wild Island.
+- Trait profile (Faction Trait Mapping): Octopus **Might -1, Wisdom 1, Power 3, Glory 1** (total 4). High Power fits the mover/control archetype. Phase influences from Faction phases sheet show Octopus gaining activity in mid-phases while Eel stays low initially.
+
+**Playable Tension**: Every "organizing" action feels satisfying and powerful in the short term but risks locking the world into the sterile Order path and provoking massive Eel backlash or Kaiju overthrow. The player must learn when *not* to intervene.
+
+#### Relationships to the Other Factions
+**With Island**: Symbiotic builder on the surface (reefs), but constant tension with the Island's desire for natural, messy change.
+
+**With Animals**: Sees them as things to be returned to home islands and prevented from "improper" mixing. Can severely hinder the fruit pilgrimage.
+
+**With People**: Can be a powerful ally for raising ruins and imposing order, but will try to lock down the Eel and limit travel/exploration.
+
+**With Structures**: Natural alliance toward rigid lattices, but risks creating the exact "dissonant" anonymous megastructures that summon the Eel.
+
+**With Eel**: Primary antagonist. Every act of control and separation is an invitation for the Eel to lengthen and dissolve boundaries in response.
+
+#### The Octopus in the Three Paths and the Symphony
+- Dominant in the **Order path** ("Octopus of Order"): beautiful but divided world of walls, coastal cities, and rigid hierarchy. Travel and mixing are minimized.
+- In **Chaos path**: The Octopus is weakened or overthrown; its attempts at control are swept away by lengthening.
+- In the **narrow gate**: Octopus power is used precisely and sparingly — enough organization to enable the pilgrimage without suppressing freedom.
+- In **Symphony**: The Octopus becomes a wise, measured mover and reef-builder that helps create the perfect harbors without locking the world down. Its tentacles help rather than hinder the fugue.
+
+#### Design Notes for Playable Octopus
+- This faction offers a unique "control fantasy" that is deliberately self-defeating if overused. It teaches the cost of excessive order through play.
+- Fits the obscure philosophy well: the "correct" amount of intervention is not obvious and must be discovered through consequences.
+- Strong mechanical tie to boat suppression, the phase matrix (active when travel is limited), and the Kaiju toggle.
+
+#### Playable Faction Experience *(Stub)*
+*(To be expanded: the god-like satisfaction of neatly filing everything in its place, the creeping realization that the world is becoming silent and divided, the horror of watching your careful order provoke a chaotic backlash, the redemptive satisfaction of learning restraint.)*
+
+---
+
+### Eel as Playable Faction: The Unbinder *(Stub — Most Development Needed)*
+
+The Eel is the archetype of loss of identity through chaotic, excessive interconnection. It is awakened by People's industry and "bites" things to make them *long* — stretching roads, towers, tunnels, spears, mineshafts, and even abstract progress in ways that blur boundaries and dissolve distinct places.
+
+#### Core Identity and Timescale
+Eel maps to "worm" and carries high **Glory** (dramatic, attention-grabbing transformation) with touches of **Wisdom** and **Honor**, but low **Wealth** (it destroys stable value through over-connection).
+
+Timescale is disruptive and opportunistic — it acts when opportunities for lengthening appear (industry, overbuilding, travel). It can feel sudden and personal compared to the Island's slowness.
+
+Its pieces are connections, distortions, "long" entities, and the erosion of categorical boundaries.
+
+The central drive (and danger): everything bleeding into everything else. The Eel does not hate order — it simply cannot help making things longer and more interconnected until nothing remains separate.
+
+**Signature Mechanic: Bite to Lengthen** (exact from Animals sheet and Bible: "Easily startled; bites things and makes them *long* (arms, roads, towers, etc.). Cousin of Octopus and Squid." "People's industry wakes it.")
+- Target almost anything: physical (roads become too long and winding, towers sway and connect to distant places, tunnels and mineshafts extend unpredictably), biological (animal traits or migrations become exaggerated or merged), technological (Peopletech lines advance faster but with chaotic side effects or "lengthened" requirements — e.g., from Peopletech: longer Sky Causeway or Grand Procession needs), even musical (rhythms stretch and tangle).
+- Lengthening can be powerful in the moment (new connections, accelerated progress) but risks loss of identity, flooding, "Drowning of Atlantis" effects, and the creation of anonymous megastructures.
+- Rory (wildness 547, worm/aether, 9 Deepest Place; Eel → Rorylet → Rory → Grand Rory) represents the extreme end of this — boss-level chaotic power. "Boss fight monster? Highest wildness in the game."
+
+#### Weaving the Eel Into the Rest of the Game (Key Development Focus)
+- **With Structures**: The primary vector for the "dissonant lattices" warning. Overbuilt bridges and sea platforms become lengthened nightmares that connect too much.
+- **With Peopletech**: A lengthened boat tech tree might enable amazing expeditions but make return nearly impossible or cause the vessels themselves to become strange, elongated entities. A lengthened Song line could create transcendent new instruments or total harmonic dissolution.
+- **With Animals**: Lengthened migrations allow fruit to travel in unexpected ways but can cause populations to lose their home-island identities or evolve into chimeric forms.
+- **With Island**: Lengthening can turn slow, patient upwellings into sudden chaotic floods or stretch geological features in surreal ways.
+- **With Octopus**: Direct counter-force. Every wall or "proper placement" is an invitation for the Eel to lengthen around or through it.
+- **With Music**: One of the most poetic expressions — the Eel can turn the aspiring single dance into something gloriously tangled or terrifyingly incoherent.
+- **With the Pilgrimage**: Lengthening can help or hinder the fruit delivery in bizarre ways. A "long" path might be the only way to get certain fruits to the Spire — at the cost of what is lost along the way.
+- **With the Kaiju Toggle and Rory**: The Eel line culminates in boss-scale power. The overthrow battle is a literal confrontation with unchecked lengthening.
+
+#### The Eel in the Three Paths and the Symphony
+- Dominant in the **Chaos / Eel Unbound path**: total dissolution of boundaries. The world becomes one interconnected, flooded, identity-less tangle. Beautiful and horrifying.
+- In the **Order path**: The Eel is suppressed or locked away, but this creates brittle systems that eventually shatter.
+- In the **narrow gate**: Lengthening is used deliberately and artistically — purposeful elongation that creates new harmonies without erasing the distinct voices.
+- In **Symphony**: The Eel is taught (by animals and music) to lengthen with love and intention. Connections serve the fugue rather than dissolve it. "Long" things become bridges of understanding rather than loss of self.
+
+#### Design Notes for Playable Eel
+- This faction should feel seductive and dangerous. The player is rewarded for creative lengthening but punished (sometimes gloriously) for excess.
+- Strongest fit with the "obscure, wondrous, obtuse" philosophy: the effects of lengthening are surprising and not fully predictable in advance. Players (and their AI interpreters) must experiment and observe consequences.
+- Needs the most new mechanical invention to feel as playable and distinct as the others. Prioritize "bite" targets that interact meaningfully with existing systems (Structures, Peopletech, animal coordination, music rhythms, Island processes).
+- Tie strongly to the new Design Philosophy: indirect, emergent, toy-like play where the player sets chaotic forces in motion and watches what the world becomes.
+
+#### Playable Faction Experience *(Stub — Expand Significantly)*
+The Eel player should feel like a seductive, world-altering force of nature that the other factions must learn to dance with rather than simply defeat or suppress.
+
+*(To be expanded in detail during step 5 of the plan: the thrill of the first successful lengthening that solves an immediate problem in a clever way (a too-short bridge becomes a dramatic span, a slow tech line suddenly surges), the creeping unease and dark glory as distinct places and identities start to blur ("Is this still my road? My tower? My species?"), the horror/beauty of a fully lengthened megastructure or chimeric animal that is both more and less than it was, the redemptive possibility of using the same power to create beautiful, intentional, purposeful connections in the Symphony state. Additional experiences to develop: the temptation to "bite" your own previous work for even more power, the strange alliances with high-tier Animals or musical People who learn to use lengthening artistically, the moment when the player realizes they have become the "Drowning of Atlantis" they once only observed.)*
+
+**Additional Eel Mechanic Seeds for Expansion** (add during development pass):
+- **Lengthened Tech-Tree Side Effects**: Advancing a Peopletech line via Eel bite can grant powerful "long" versions (e.g., a lengthened Boat line creates vessels that can reach impossible places but may not return the same, or that literally stretch the crew's experience of time).
+- **Rhythm Distortion**: Bite the music system itself — turn a crisp daily rhythm into a long, echoing, hypnotic one that affects coordination or even Island processes.
+- **Identity Erosion as Resource**: Allow the Eel player to deliberately erode distinctions (merge two animal lines temporarily for a chimeric super-creature, or blur Octopus zones) at the cost of long-term stability.
+- **The Rory Escalation**: The higher the Eel player's influence, the more the Rory line awakens as a playable or oppositional force — a feedback loop of chaotic power.
+- **Redemptive Lengthening in Symphony**: In balance, "long" becomes a positive tool for the fruit pilgrimage (a lengthened migration route that safely carries multiple fruits at once) or for creating the grand, interconnected but still distinct adventure harbors.
+
+---
 
 ## 8\. Traits \& Arbitration Mechanics
 
