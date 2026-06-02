@@ -184,7 +184,7 @@ These provide the "tabletop" or "conductor" layer that all factions interact wit
 
 ---
 
-**Current folder status (Post-Review Cleanup - Phase 5):**
+**Current folder status (Post-Review Cleanup - Phase 5, with retry on 18 & 20):**
 
 Full set of 35 mockups in place.
 
@@ -193,7 +193,7 @@ Full set of 35 mockups in place.
 **Flagged and fixed in this pass (major issues like visible text/numbers, wrong/mixed content, poor match to description, or drifted focus):**
 - 08, 09, 10 (Island variants)
 - 13, 15 (Animals)
-- 18, 20 (People)
+- 18, 20 (People) — retried with direct use of 06_PeopleTech boat and clothing references for accurate visuals
 - 23 (Structures)
 - 27 (Octopus)
 - 30, 31, 32, 33 (Eel)
