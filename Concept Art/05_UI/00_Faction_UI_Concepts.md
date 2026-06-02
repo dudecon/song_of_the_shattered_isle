@@ -184,26 +184,28 @@ These provide the "tabletop" or "conductor" layer that all factions interact wit
 
 ---
 
-**Current folder status (Generation Phase 4 — FULL COVERAGE of all planned concepts, strict zero-text/zero-numbers):**
+**Current folder status (Post-Review Cleanup - Phase 5):**
 
-**All 35 planned mockups now generated and placed** (plus the existing anchor):
+Full set of 35 mockups in place.
 
-Globals (02–06 + 35): Complete  
-Island (07–11): Complete  
-Animals (12–16): Complete  
-People (17–21): Complete  
-Structures (22–25): Complete  
-Octopus (26–29): Complete  
-Eel (30–33): Complete  
-Symphony Fugue (34): Complete
+**Review completed:** I systematically read through all images in 05_UI and compared them against the exact descriptions in this planning document, the busy graphic zero-text/zero-numbers rules, and overall consistency with the best examples (e.g. 03_Actor_Matrix, 34_Symphony_Fugue, main dashboards).
 
-**Milestone:** 100% coverage of every file listed in the planning tables in this document. All in the requested busy graphic design / vector-art influenced fantasy UI style with maximum symbolic icon density and **strict zero text + zero numbers**.
+**Flagged and fixed in this pass (major issues like visible text/numbers, wrong/mixed content, poor match to description, or drifted focus):**
+- 08, 09, 10 (Island variants)
+- 13, 15 (Animals)
+- 18, 20 (People)
+- 23 (Structures)
+- 27 (Octopus)
+- 30, 31, 32, 33 (Eel)
+- 35 (Trait Comparison)
 
-**Aesthetic note:** Every image in this batch follows the updated rules: busy, icon-heavy, hand-crafted mythic fantasy UI with no legible text or numbers anywhere.
+These received targeted image_edit fixes using the best clean busy references + very precise prompts quoting the planning descriptions.
 
-The full set is now available for review, further cleanup passes, or use.
+Other images were reviewed and deemed acceptable (or only minor cosmetic issues not rising to "don't look right").
 
-This document + the full Design_Bible.md + the completed Concept Art library has produced the complete UI concept series.
+All images should now better match their intended purpose, have strong icon density, correct faction/path emphasis where relevant, and (most importantly) **zero text and zero numbers**.
+
+The full set is ready for final review. If any specific ones still need tweaks, point them out.
 
 ---
 
